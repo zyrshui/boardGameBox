@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="app.wgt.MsgBoxSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0x23bcb6"/>
+    <e:Group id="btnGroup" height="120" left="0" right="0" bottom="0">
+        <e:Button id="secondBtn" x="36" y="38"  skinName="eui.Button$Common"  anchorOffsetX="0" width="136" anchorOffsetY="0" height="50" label="cancle"/>
+        <e:Button id="firstBtn" x="202" y="38"  skinName="eui.Button$Common" label="ok"  anchorOffsetX="0" width="136" anchorOffsetY="0" height="50"/>
+        <e:layout>
+            <e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="80" />
+        </e:layout>
+    </e:Group>
+    <e:Label id="lblMsg" text="~元宝不足" size="36" horizontalCenter="0" top="60" maxWidth="400" textColor="0xeccc9d"
+             textAlign="center" />
+    <e:Label id="lblTitle" text="" size="20" horizontalCenter="0" maxWidth="400" textAlign="center" y="6"
+             textColor="0xd1c0a5" />
+</e:Skin>
