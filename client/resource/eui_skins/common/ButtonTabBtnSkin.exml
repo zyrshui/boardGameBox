@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="eui.Button$TabBtn" minWidth="86" minHeight="42" states="up,down" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+        <e:Rect fillColor="0x725e08" fillColor.down="0xff5e08" left="0" right="0" top="0" bottom="0" ellipseWidth="20" ellipseHeight="20"/>
+    <e:Image bottom="0" horizontalCenter="0" source.up="" source.down="" top.down="0" top.up="0"
+             source="" />
+    <e:Label id="labelDisplay" text="{data.txt}" size="18" horizontalCenter="0" verticalCenter="0" textColor="0xefeff1" />
+</e:Skin>

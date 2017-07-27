@@ -3,6 +3,7 @@
   "autoGenerateExmlsList": true,
   "exmls": [
     "resource/eui_skins/common/ButtonCommonSkin.exml",
+    "resource/eui_skins/common/ButtonTabBtnSkin.exml",
     "resource/eui_skins/facade/FacadeDlgSkin.exml",
     "resource/eui_skins/werewolves/FacadeDlgSkin.exml",
     "resource/eui_skins/werewolves/WerewolvesDlgSkin.exml",

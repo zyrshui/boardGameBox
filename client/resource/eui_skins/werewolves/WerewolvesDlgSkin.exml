@@ -5,4 +5,19 @@
              strokeColor="0xc4801b" size="40" />
 	<e:Button id="btnModel9" label="9 players standard \n mode" y="280" skinName="eui.Button$Common" anchorOffsetX="0" width="292" horizontalCenter="-180"/>
 	<e:Button id="btnModel12" label="12 players standard \n mode" y="280" skinName="eui.Button$Common" anchorOffsetX="0" width="292" horizontalCenter="180"/>
+	<e:Label text="Number of villigers" y="408" textColor="0x725e08" stroke="1" strokeColor="0xffffff" horizontalCenter="-180"/>
+	<e:Label text="Number of wolves" y="408" textColor="0x725E08" stroke="1" strokeColor="0xFFFFFF" horizontalCenter="180"/>
+	<e:TabBar id="tbrVilligers" y="482" horizontalCenter="-180" itemRendererSkinName="eui.Button$TabBtn">
+        <e:ArrayCollection>
+			<e:Array>
+				<e:Object txt="3" />
+				<e:Object txt="4" />
+				<e:Object txt="5" />
+				<e:Object txt="6" />
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:VerticalLayout gap="2"/>
+		</e:layout>
+	</e:TabBar>
 </e:Skin>
