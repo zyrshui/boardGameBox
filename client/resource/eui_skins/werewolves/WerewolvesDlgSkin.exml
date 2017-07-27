@@ -20,4 +20,18 @@
 			<e:VerticalLayout gap="2"/>
 		</e:layout>
 	</e:TabBar>
+	<e:TabBar id="tbrWolves" y="482" horizontalCenter="180" itemRendererSkinName="eui.Button$TabBtn">
+		<e:ArrayCollection>
+		<e:Array>
+			<e:Object txt="3"/>
+			<e:Object txt="4"/>
+			<e:Object txt="5"/>
+			<e:Object txt="6"/>
+		</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+		<e:VerticalLayout gap="2"/>
+		</e:layout>
+	</e:TabBar>
+	<e:CheckBox label="CheckBox" x="114" y="838"/>
 </e:Skin>
