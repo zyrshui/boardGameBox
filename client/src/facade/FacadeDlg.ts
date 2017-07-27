@@ -21,7 +21,7 @@ namespace app.facade {
         }
 
         onBtnSpy() {
-
+            ui.msgBox('Not open yet', { buttons: ui.MessageButton.Yes });
         }
 
         dispose() {
