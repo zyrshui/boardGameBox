@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "button_png",
+			"keys": "button_png,img_gouxuan1_png,img_gouxuan_png",
 			"name": "preload"
 		}
 	],
@@ -15,6 +15,16 @@
 			"url": "assets/facade/button.png",
 			"type": "image",
 			"name": "button_png"
+		},
+		{
+			"name": "img_gouxuan1_png",
+			"type": "image",
+			"url": "assets/common/img_gouxuan1.png"
+		},
+		{
+			"name": "img_gouxuan_png",
+			"type": "image",
+			"url": "assets/common/img_gouxuan.png"
 		}
 	]
 }
