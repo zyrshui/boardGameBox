@@ -32,7 +32,7 @@ namespace app.werewolves {
                 case egret.TouchEvent.TOUCH_BEGIN:
                     this.timeId = egret.setTimeout(() => {
                         this.showHead(true);
-                    }, this, 1000);
+                    }, this, 300);
                     break;
                 case egret.TouchEvent.TOUCH_END:
                     egret.clearTimeout(this.timeId);
