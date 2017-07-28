@@ -1,0 +1,12 @@
+{
+    "name": "egret",
+    "version": "3.2.1",
+    "modules": [
+        {
+            "name": "lodash",
+            "description": "lodash",
+            "files": [],
+            "root": "src"
+        }
+    ]
+}

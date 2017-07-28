@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="app.werewolves.JudgeDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="2" right="-2" top="0" bottom="0" fillColor="0x52e5e5" locked="true" />
+	<e:Label text="Werewolves" y="162" horizontalCenter="0" textAlign="center" stroke="3" textColor="0xffffff"
+	         strokeColor="0xc4801b" size="40" />
+	<e:DataGroup id="grpHead" width="570" height="674" y="284" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:itemRendererSkinName>
+			<e:Skin width="114">
+				<e:Label text="{data.job}" horizontalCenter="0" size="30" visible="{data.showJob}" />
+				<e:Group horizontalCenter="0" y="50">
+					<e:Image source="avatar_male_png" top="0" right="0" bottom="0" left="0" />
+					<e:Label text="{data.index}" verticalAlign="middle" size="50" textColor="0xffc105" />
+				</e:Group>
+			</e:Skin>
+		</e:itemRendererSkinName>
+		<e:layout>
+			<e:TileLayout requestedColumnCount="5" orientation="rows" horizontalAlign="center" horizontalGap="0" />
+		</e:layout>
+		<e:ArrayCollection>
+			<e:Array></e:Array>
+		</e:ArrayCollection>
+	</e:DataGroup>
+	<e:Button id="btnCheck" label="Check" y="1092" skinName="eui.Button$Common" horizontalCenter="-150" />
+	<e:Button id="btnEnd" label="End" y="1092" skinName="eui.Button$Common" horizontalCenter="150" />
+</e:Skin>

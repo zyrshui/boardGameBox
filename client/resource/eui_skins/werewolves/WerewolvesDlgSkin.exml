@@ -33,12 +33,23 @@
 		<e:VerticalLayout gap="2"/>
 		</e:layout>
 	</e:TabBar>
-	<e:CheckBox id="chIdiot" label="idiot" y="725" skinName="eui.CheckButton$Common" horizontalCenter="-248"/>
-	<e:CheckBox id="chHunter" label="hunter" y="725" skinName="eui.CheckButton$Common" horizontalCenter="-48"/>
-	<e:CheckBox id="chWitch" label="witch" y="725" skinName="eui.CheckButton$Common" horizontalCenter="152"/>
-	<e:CheckBox id="chSavior" label="savior" y="841" skinName="eui.CheckButton$Common" horizontalCenter="-248"/>
-	<e:CheckBox id="chWolfKing" label="wolf king" y="851" skinName="eui.CheckButton$Common" horizontalCenter="-48" x="10"/>
-	<e:CheckBox id="chSear" label="seer" y="851" skinName="eui.CheckButton$Common" horizontalCenter="152" x="10"/>
+	<e:Group id="grpCheck" height="204" y="704" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" width="520">
+		<e:CheckBox name="Idiot" label="idiot" y="63" skinName="eui.CheckButton$Common" horizontalCenter="-248" x="93" scaleX="1" scaleY="1"/>
+		<e:CheckBox name="Hunter" label="hunter" y="63" skinName="eui.CheckButton$Common" horizontalCenter="-48" x="293" scaleX="1" scaleY="1"/>
+		<e:CheckBox name="Witch" label="witch" y="63" skinName="eui.CheckButton$Common" horizontalCenter="152" x="493" scaleX="1" scaleY="1"/>
+		<e:CheckBox name="Savior" label="savior" y="179" skinName="eui.CheckButton$Common" horizontalCenter="-248" x="93" scaleX="1" scaleY="1"/>
+		<e:CheckBox name="Wolf King" label="wolf king" y="189" skinName="eui.CheckButton$Common" horizontalCenter="-48" x="293" scaleX="1" scaleY="1"/>
+		<e:CheckBox name="Seer" label="seer" y="189" skinName="eui.CheckButton$Common" horizontalCenter="152" x="493" scaleX="1" scaleY="1"/>
+		<e:layout>
+			<e:TileLayout orientation="rows" horizontalAlign="contentJustify" requestedRowCount="2" requestedColumnCount="3" rowAlign="justifyUsingGap" columnAlign="justifyUsingGap"/>
+		</e:layout>
+	</e:Group>
+
+
+
+
+
+
 	<e:Label id="lblTotal" text="Total: {0} players" y="992" textColor="0x725e08" size="40" horizontalCenter="0"/>
 	<e:Button id="btnStart" label="Start" y="1120" horizontalCenter="0" skinName="eui.Button$Common"/>
 </e:Skin>

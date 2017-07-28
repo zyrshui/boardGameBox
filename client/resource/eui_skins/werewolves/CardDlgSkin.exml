@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="app.werewolves.CardDlgSkin" width="720" height="1280" currentState="positive" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="positive,back" >
+    <e:Rect left="0" right="0" top="0" bottom="0" fillColor="0x52e5e5" />
+	<e:Label id="lblTitle" text="Player %s" y="182" strokeColor="0xc4801b" stroke="3" size="40" horizontalCenter="0"/>
+	<e:Label id="lblJob" text="Seer" y="716" strokeColor="0xC4801B" stroke="3" size="34" horizontalCenter="0" includeIn="back"/>
+	<e:Label id="lblDesc" text="Press Next and give it to the next player" y="962" strokeColor="0xC4801B" stroke="3" size="30" horizontalCenter="0" includeIn="back"/>
+	<e:Image id="imgCard"   horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0" source="card_bg_jpg"  width="200" height="300" y="306"/>
+	<e:Button id="btnNext" label="Next" includeIn="back" y="840" horizontalCenter="0" skinName="eui.Button$Common"/>
+	<e:Button id="btnFlip" label="Flip" y="738" skinName="eui.Button$Common" horizontalCenter="0" horizontalCenter.back="0" y.back="700" horizontalCenter.positive="0" y.positive="734" includeIn="positive"/>
+</e:Skin>

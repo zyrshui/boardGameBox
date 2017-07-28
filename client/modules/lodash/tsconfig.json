@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "locale": "zh-CN",
+        "outFile": "bin/lodash/lodash.js",
+        "declaration": true
+    },
+    "exclude": [
+        "node_modules",
+        "bin"
+    ],
+    "files": [
+    ]
+}

@@ -38,6 +38,7 @@ class Main extends eui.UILayer {
         //inject the custom material parser
         //注入自定义的素材解析器
         ui.init(this);
+        manager.init();
         let assetAdapter = new AssetAdapter();
         egret.registerImplementation("eui.IAssetAdapter", assetAdapter);
         egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
