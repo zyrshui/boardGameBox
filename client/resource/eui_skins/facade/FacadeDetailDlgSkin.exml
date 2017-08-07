@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="app.facade.FacadeDetailDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Rect left="1" right="-1" top="0" bottom="0" fillColor="0x52e5e5" />
+    <e:Label id="lblGameName" text="Werewolves" y="162" horizontalCenter="0" textAlign="center" stroke="3" textColor="0xffffff"
+             strokeColor="0xc4801b" size="40" />
+	<e:Scroller y="260" anchorOffsetX="0" width="567" anchorOffsetY="0" height="682" horizontalCenter="0" bounces="false">
+		<e:Group>
+        	<e:Label id="lblDesc" text="" anchorOffsetX="0" width="567" anchorOffsetY="0" horizontalCenter="0" stroke="2" textColor="0xffffff" strokeColor="0x000000"/>
+        </e:Group>
+	</e:Scroller>
+	<e:Button id="btnPlay" skinName="eui.Button$Common" label="play" width="250" y="994" horizontalCenter="170"/>
+	<e:Button id="btnBack" skinName="eui.Button$Common" label="back" width="250" y="994" horizontalCenter="-170"/>
+</e:Skin>

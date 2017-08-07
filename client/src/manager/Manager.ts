@@ -2,8 +2,10 @@
 namespace app {
     export class Manager {
         werewolves:WerewolvesManager;
+        facede:FacedeManager;
         init(){
             this.werewolves = new WerewolvesManager();
+            this.facede = new FacedeManager();
         }
     }
 }

@@ -5,9 +5,11 @@
     "resource/eui_skins/common/ButtonCommonSkin.exml",
     "resource/eui_skins/common/ButtonTabBtnSkin.exml",
     "resource/eui_skins/common/CheckBoxCommonSkin.exml",
+    "resource/eui_skins/facade/FacadeDetailDlgSkin.exml",
     "resource/eui_skins/facade/FacadeDlgSkin.exml",
+    "resource/eui_skins/king_game/DropListViewSkin.exml",
+    "resource/eui_skins/king_game/KingGameDlgSkin.exml",
     "resource/eui_skins/werewolves/CardDlgSkin.exml",
-    "resource/eui_skins/werewolves/FacadeDlgSkin.exml",
     "resource/eui_skins/werewolves/JudgeDlgSkin.exml",
     "resource/eui_skins/werewolves/WerewolvesDlgSkin.exml",
     "resource/eui_skins/wgt/MsgBoxSkin.exml"

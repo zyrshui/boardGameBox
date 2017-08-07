@@ -68,7 +68,7 @@ namespace app.ui {
         icons?: string[]
     }
 
-    interface DialogConstructor<T> {
+    export interface DialogConstructor<T> {
         new (...params: any[]): T
     };
 

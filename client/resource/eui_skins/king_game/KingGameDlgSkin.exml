@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="app.king_game.KingGameDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Rect left="0" right="0" top="0" bottom="0" fillColor="0x52e5e5" locked="true" />
+    <e:Label text="The King's Game" y="162" horizontalCenter="0" textAlign="center" stroke="3" textColor="0xffffff"
+             strokeColor="0xc4801b" size="40" />
+    <e:Label text="Number of Players" y="310" textColor="0x725e08" stroke="1" strokeColor="0xffffff"
+             horizontalCenter="0.5" />
+    <e:Button id="btnStart" label="Start" y="1092" skinName="eui.Button$Common" horizontalCenter="0" />
+    <e:Rect id="recTouch" width="240" height="44" y="394" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"
+            strokeColor="0x000000" fillColor="0xffa900" strokeWeight="2" />
+    <e:Label id="lblSelectedModel" text="9" y="400" horizontalCenter="0" touchEnabled="false" />
+    <e:Scroller id="srcKings" width="240" height="0" y="434" anchorOffsetX="0" horizontalCenter="0" bounces="false" scrollPolicyH="off">
+        <e:TabBar id="tbrKings" y="-2" horizontalCenter="0" itemRendererSkinName="app.king_game.DropListViewSkin">
+            <e:ArrayCollection>
+                <e:Array>
+                    <e:Object txt="6" />
+                    <e:Object txt="7" />
+                    <e:Object txt="8" />
+                    <e:Object txt="9" />
+                    <e:Object txt="10" />
+                    <e:Object txt="11" />
+                    <e:Object txt="12" />
+                    <e:Object txt="13" />
+                    <e:Object txt="14" />
+                    <e:Object txt="15" />
+                    <e:Object txt="16" />
+                </e:Array>
+            </e:ArrayCollection>
+            <e:layout>
+                <e:VerticalLayout  gap="0"/>
+            </e:layout>
+        </e:TabBar>
+    </e:Scroller>
+</e:Skin>

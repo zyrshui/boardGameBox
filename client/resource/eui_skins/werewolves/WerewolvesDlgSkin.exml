@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="app.werewolves.WerewolvesDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-    <e:Rect left="2" right="-2" top="0" bottom="0" fillColor="0x52e5e5"  locked="true"/>
+    <e:Rect left="0" right="0" top="0" bottom="0" fillColor="0x52e5e5"  locked="true"/>
     <e:Label text="Werewolves" y="162" horizontalCenter="0" textAlign="center" stroke="3" textColor="0xffffff"
              strokeColor="0xc4801b" size="40" />
 	<e:Button id="btnModel9" label="9 players standard \n mode" y="280" skinName="eui.Button$Common" anchorOffsetX="0" width="292" horizontalCenter="-180"/>

@@ -13,11 +13,11 @@ namespace app.facade {
 
 
         onBtnWolves() {
-            ui.show(werewolves.FacadeDlg);
+            ui.show(FacadeDetailDlg, {params:[EGameType.WEREWOLVES]});
         }
 
         onBtnKing() {
-            ui.msgBox('Not open yet', { buttons: ui.MessageButton.Yes });
+            ui.show(FacadeDetailDlg, {params:[EGameType.KING_GAME]});
         }
 
         onBtnSpy() {

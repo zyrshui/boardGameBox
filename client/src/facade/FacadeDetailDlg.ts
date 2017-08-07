@@ -1,10 +1,20 @@
 // TypeScript file
-namespace app.werewolves {
-    export class FacadeDlg extends ui.Dialog {
+namespace app.facade {
+    export class FacadeDetailDlg extends ui.Dialog {
         btnPlay: eui.Button;
         btnBack: eui.Button;
+        gameType:EGameType;
+        lblGameName:eui.Label;
+        lblDesc:eui.Label;
+        constructor(gameType:EGameType){
+            super();
+            this.gameType = gameType;
+        }
         childrenCreated() {
             super.childrenCreated();
+            let cfg = manager.facede.cfgMap[this.gameType];
+            this.lblGameName.text = cfg.name;
+            this.lblDesc.text = cfg.desc;
             this.btnBack.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnBack, this);
             this.btnPlay.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnPlay, this);
         }
@@ -14,7 +24,7 @@ namespace app.werewolves {
         }
 
         onBtnPlay() {
-            ui.show(WerewolvesDlg);
+            manager.facede.playGame(this.gameType);
         }
 
         dispose() {
