@@ -52,14 +52,14 @@ namespace app.werewolves {
         onBtnModel9() {
             this.tbrVilligers.selectedIndex = 0;
             this.tbrWolves.selectedIndex = 0;
-            this.setSpecialJob(['seer', 'hunter', 'witch']);
+            this.setSpecialJob(['Seer', 'Hunter', 'Witch']);
             this.updateView();
         }
 
         onBtnModel12() {
             this.tbrVilligers.selectedIndex = 1;
             this.tbrWolves.selectedIndex = 1;
-            this.setSpecialJob(['seer', 'hunter', 'witch', 'idiot']);
+            this.setSpecialJob(['Seer', 'Hunter', 'Witch', 'Idiot']);
             this.updateView();
         }
 
@@ -100,9 +100,10 @@ namespace app.werewolves {
         }
 
         setSpecialJob(jobs: string[]) {
-            for (let i = 0, l = this.tbrVilligers.$children.length; i < l; i++) {
+            for (let i = 0, l = this.grpCheck.$children.length; i < l; i++) {
                 let child = this.grpCheck.$children[i] as eui.CheckBox;
                 child.selected = jobs.indexOf(child.name) > -1;
+               // child.invalidateState();
             }
         }
 
