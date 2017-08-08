@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "button_png,img_gouxuan1_png,img_gouxuan_png,card_bg_jpg,Seer_jpg,Idiot_jpg,Hunter_jpg,Witch_jpg,Savior_jpg,Wolf King_jpg,Villiger_jpg,Wolves_jpg,avatar_male_png",
+			"keys": "button_png,img_gouxuan1_png,img_gouxuan_png,card_bg_jpg,Seer_jpg,Idiot_jpg,Hunter_jpg,Witch_jpg,Savior_jpg,Wolf King_jpg,Villiger_jpg,Wolves_jpg,avatar_male_png,1_jpg,2_jpg,3_jpg,4_jpg,5_jpg,6_jpg,7_jpg,8_jpg,9_jpg,10_jpg,11_jpg,12_jpg,13_jpg",
 			"name": "preload"
 		}
 	],
@@ -17,64 +17,129 @@
 			"name": "button_png"
 		},
 		{
-			"name": "img_gouxuan1_png",
+			"url": "assets/common/img_gouxuan1.png",
 			"type": "image",
-			"url": "assets/common/img_gouxuan1.png"
+			"name": "img_gouxuan1_png"
 		},
 		{
-			"name": "img_gouxuan_png",
+			"url": "assets/common/img_gouxuan.png",
 			"type": "image",
-			"url": "assets/common/img_gouxuan.png"
+			"name": "img_gouxuan_png"
 		},
 		{
-			"name": "card_bg_jpg",
+			"url": "assets/werewolves/card_bg.jpg",
 			"type": "image",
-			"url": "assets/werewolves/card_bg.jpg"
+			"name": "card_bg_jpg"
 		},
 		{
-			"name": "Seer_jpg",
+			"url": "assets/werewolves/Seer.jpg",
 			"type": "image",
-			"url": "assets/werewolves/Seer.jpg"
+			"name": "Seer_jpg"
 		},
 		{
-			"name": "Idiot_jpg",
+			"url": "assets/werewolves/Idiot.jpg",
 			"type": "image",
-			"url": "assets/werewolves/Idiot.jpg"
+			"name": "Idiot_jpg"
 		},
 		{
-			"name": "Hunter_jpg",
+			"url": "assets/werewolves/Hunter.jpg",
 			"type": "image",
-			"url": "assets/werewolves/Hunter.jpg"
+			"name": "Hunter_jpg"
 		},
 		{
-			"name": "Witch_jpg",
+			"url": "assets/werewolves/Witch.jpg",
 			"type": "image",
-			"url": "assets/werewolves/Witch.jpg"
+			"name": "Witch_jpg"
 		},
 		{
-			"name": "Savior_jpg",
+			"url": "assets/werewolves/Savior.jpg",
 			"type": "image",
-			"url": "assets/werewolves/Savior.jpg"
+			"name": "Savior_jpg"
 		},
 		{
-			"name": "Wolf King_jpg",
+			"url": "assets/werewolves/Wolf King.jpg",
 			"type": "image",
-			"url": "assets/werewolves/Wolf King.jpg"
+			"name": "Wolf King_jpg"
 		},
 		{
-			"name": "Villiger_jpg",
+			"url": "assets/werewolves/Villiger.jpg",
 			"type": "image",
-			"url": "assets/werewolves/Villiger.jpg"
+			"name": "Villiger_jpg"
 		},
 		{
-			"name": "Wolves_jpg",
+			"url": "assets/werewolves/Wolves.jpg",
 			"type": "image",
-			"url": "assets/werewolves/Wolves.jpg"
+			"name": "Wolves_jpg"
 		},
 		{
-			"name": "avatar_male_png",
+			"url": "assets/werewolves/avatar_male.png",
 			"type": "image",
-			"url": "assets/werewolves/avatar_male.png"
+			"name": "avatar_male_png"
+		},
+		{
+			"url": "assets/king/1.jpg",
+			"type": "image",
+			"name": "1_jpg"
+		},
+		{
+			"url": "assets/king/2.jpg",
+			"type": "image",
+			"name": "2_jpg"
+		},
+		{
+			"url": "assets/king/3.jpg",
+			"type": "image",
+			"name": "3_jpg"
+		},
+		{
+			"url": "assets/king/4.jpg",
+			"type": "image",
+			"name": "4_jpg"
+		},
+		{
+			"url": "assets/king/5.jpg",
+			"type": "image",
+			"name": "5_jpg"
+		},
+		{
+			"url": "assets/king/6.jpg",
+			"type": "image",
+			"name": "6_jpg"
+		},
+		{
+			"url": "assets/king/7.jpg",
+			"type": "image",
+			"name": "7_jpg"
+		},
+		{
+			"url": "assets/king/8.jpg",
+			"type": "image",
+			"name": "8_jpg"
+		},
+		{
+			"url": "assets/king/9.jpg",
+			"type": "image",
+			"name": "9_jpg"
+		},
+		{
+			"url": "assets/king/10.jpg",
+			"type": "image",
+			"name": "10_jpg"
+		},
+		{
+			"url": "assets/king/11.jpg",
+			"type": "image",
+			"name": "11_jpg"
+		},
+		{
+			"url": "assets/king/12.jpg",
+			"type": "image",
+			"name": "12_jpg"
+		},
+		{
+			"url": "assets/king/13.jpg",
+			"type": "image",
+			"name": "13_jpg"
 		}
 	]
 }

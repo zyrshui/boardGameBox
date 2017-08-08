@@ -7,7 +7,8 @@ namespace app.king_game {
         recTouch: eui.Rect;
         tbrKings: eui.TabBar;
         srcKings: eui.Scroller;
-        lblSelectedModel:eui.Label;
+        lblSelectedModel: eui.Label;
+        btnStart:eui.Button;
         childrenCreated() {
             super.childrenCreated();
             this.registerEvent();
@@ -17,10 +18,13 @@ namespace app.king_game {
         registerEvent() {
             this.recTouch.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showDropList, this);
             this.tbrKings.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onTbrKingsItemTap, this);
+            this.btnStart.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGame, this);
         }
 
         updateView() {
-
+            let model = manager.king.getPlayModel();
+            this.lblSelectedModel.text = model;
+            this.tbrKings.selectedIndex = model - 6;
         }
 
         showDropList() {
@@ -31,10 +35,15 @@ namespace app.king_game {
             egret.Tween.get(this.srcKings).to({ height: 0 }, 300);
         }
 
-        onTbrKingsItemTap(){
+        onTbrKingsItemTap() {
             let data = this.tbrKings.selectedItem as IKingGameData;
             this.lblSelectedModel.text = data.txt;
+            manager.king.setPlayModel(+data.txt);
             this.hideDropList();
+        }
+
+        startGame(){
+            ui.show(CardDlg);
         }
 
 

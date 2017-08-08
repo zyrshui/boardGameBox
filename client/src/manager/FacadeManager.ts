@@ -19,23 +19,22 @@ namespace app {
                     ui.show(werewolves.WerewolvesDlg);
                 }
             },
-            1:{
-                "name":"The King's game",
-                desc:t.KING_DESC,
-                show:()=>{
+            1: {
+                "name": "The King's game",
+                desc: t.KING_DESC,
+                show: () => {
                     ui.show(king_game.KingGameDlg);
                 }
             },
-            2:{
-                "name":"",
-                desc:"",
-                show:()=>{
+            2: {
+                "name": "",
+                desc: "",
+                show: () => {
 
                 }
             }
         };
-
-        playGame(gameType:EGameType){
+        playGame(gameType: EGameType) {
             let cfg = this.cfgMap[gameType];
             cfg.show();
         }

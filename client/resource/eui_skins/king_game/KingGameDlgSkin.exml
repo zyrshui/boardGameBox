@@ -22,9 +22,6 @@
                     <e:Object txt="11" />
                     <e:Object txt="12" />
                     <e:Object txt="13" />
-                    <e:Object txt="14" />
-                    <e:Object txt="15" />
-                    <e:Object txt="16" />
                 </e:Array>
             </e:ArrayCollection>
             <e:layout>
