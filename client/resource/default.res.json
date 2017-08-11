@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "button_png,img_gouxuan1_png,img_gouxuan_png,card_bg_jpg,Seer_jpg,Idiot_jpg,Hunter_jpg,Witch_jpg,Savior_jpg,Wolf King_jpg,Villiger_jpg,Wolves_jpg,avatar_male_png,1_jpg,2_jpg,3_jpg,4_jpg,5_jpg,6_jpg,7_jpg,8_jpg,9_jpg,10_jpg,11_jpg,12_jpg,13_jpg",
+			"keys": "card_bg_jpg,Seer_jpg,Idiot_jpg,Hunter_jpg,Witch_jpg,Savior_jpg,Wolf King_jpg,Villiger_jpg,Wolves_jpg,avatar_male_png,1_jpg,2_jpg,3_jpg,4_jpg,5_jpg,6_jpg,7_jpg,8_jpg,9_jpg,10_jpg,11_jpg,12_jpg,13_jpg,btn_king_png,btn_spy_png,btn_wolves_png,img_rukoubg_jpg,img_logo_png,btn_back_png,btn_common_png,img_bg1_jpg,txt_start_png,txt_back_png,txt_check_png,txt_end_png,txt_flip_png,txt_next_png,txt_play_png,txt_rule_png,img_fenge_png,test_jpg,img_bg2_jpg,btn_3_1_png,btn_2_0_png,btn_2_1_png,btn_3_0_png,img_xuanxiang_png,img_fangkuang_png,img_honghgou_png,txt_12p_png,txt_9p_png,img_tips_png,img_xiajiantou_png",
 			"name": "preload"
 		}
 	],
@@ -10,21 +10,6 @@
 			"url": "config/description.json",
 			"type": "json",
 			"name": "description_json"
-		},
-		{
-			"url": "assets/facade/button.png",
-			"type": "image",
-			"name": "button_png"
-		},
-		{
-			"url": "assets/common/img_gouxuan1.png",
-			"type": "image",
-			"name": "img_gouxuan1_png"
-		},
-		{
-			"url": "assets/common/img_gouxuan.png",
-			"type": "image",
-			"name": "img_gouxuan_png"
 		},
 		{
 			"url": "assets/werewolves/card_bg.jpg",
@@ -140,6 +125,156 @@
 			"url": "assets/king/13.jpg",
 			"type": "image",
 			"name": "13_jpg"
+		},
+		{
+			"name": "btn_king_png",
+			"type": "image",
+			"url": "assets/facade/btn_king.png"
+		},
+		{
+			"name": "btn_spy_png",
+			"type": "image",
+			"url": "assets/facade/btn_spy.png"
+		},
+		{
+			"name": "btn_wolves_png",
+			"type": "image",
+			"url": "assets/facade/btn_wolves.png"
+		},
+		{
+			"name": "img_rukoubg_jpg",
+			"type": "image",
+			"url": "assets/facade/img_rukoubg.jpg"
+		},
+		{
+			"name": "img_logo_png",
+			"type": "image",
+			"url": "assets/common/img_logo.png"
+		},
+		{
+			"name": "btn_back_png",
+			"type": "image",
+			"url": "assets/common/btn_back.png"
+		},
+		{
+			"name": "btn_common_png",
+			"type": "image",
+			"url": "assets/common/btn_common.png"
+		},
+		{
+			"name": "img_bg1_jpg",
+			"type": "image",
+			"url": "assets/facade/img_bg1.jpg"
+		},
+		{
+			"name": "txt_start_png",
+			"type": "image",
+			"url": "assets/common/txt_start.png"
+		},
+		{
+			"name": "txt_back_png",
+			"type": "image",
+			"url": "assets/common/txt_back.png"
+		},
+		{
+			"name": "txt_check_png",
+			"type": "image",
+			"url": "assets/common/txt_check.png"
+		},
+		{
+			"name": "txt_end_png",
+			"type": "image",
+			"url": "assets/common/txt_end.png"
+		},
+		{
+			"name": "txt_flip_png",
+			"type": "image",
+			"url": "assets/common/txt_flip.png"
+		},
+		{
+			"name": "txt_next_png",
+			"type": "image",
+			"url": "assets/common/txt_next.png"
+		},
+		{
+			"name": "txt_play_png",
+			"type": "image",
+			"url": "assets/common/txt_play.png"
+		},
+		{
+			"name": "txt_rule_png",
+			"type": "image",
+			"url": "assets/facade/txt_rule.png"
+		},
+		{
+			"name": "img_fenge_png",
+			"type": "image",
+			"url": "assets/facade/img_fenge.png"
+		},
+		{
+			"name": "test_jpg",
+			"type": "image",
+			"url": "assets/werewolves/test.jpg"
+		},
+		{
+			"name": "img_bg2_jpg",
+			"type": "image",
+			"url": "assets/werewolves/img_bg2.jpg"
+		},
+		{
+			"name": "btn_3_1_png",
+			"type": "image",
+			"url": "assets/common/btn_3_1.png"
+		},
+		{
+			"name": "btn_2_0_png",
+			"type": "image",
+			"url": "assets/common/btn_2_0.png"
+		},
+		{
+			"name": "btn_2_1_png",
+			"type": "image",
+			"url": "assets/common/btn_2_1.png"
+		},
+		{
+			"name": "btn_3_0_png",
+			"type": "image",
+			"url": "assets/common/btn_3_0.png"
+		},
+		{
+			"name": "img_xuanxiang_png",
+			"type": "image",
+			"url": "assets/werewolves/img_xuanxiang.png"
+		},
+		{
+			"name": "img_fangkuang_png",
+			"type": "image",
+			"url": "assets/werewolves/img_fangkuang.png"
+		},
+		{
+			"name": "img_honghgou_png",
+			"type": "image",
+			"url": "assets/werewolves/img_honghgou.png"
+		},
+		{
+			"name": "txt_12p_png",
+			"type": "image",
+			"url": "assets/werewolves/txt_12p.png"
+		},
+		{
+			"name": "txt_9p_png",
+			"type": "image",
+			"url": "assets/werewolves/txt_9p.png"
+		},
+		{
+			"name": "img_tips_png",
+			"type": "image",
+			"url": "assets/common/img_tips.png"
+		},
+		{
+			"name": "img_xiajiantou_png",
+			"type": "image",
+			"url": "assets/werewolves/img_xiajiantou.png"
 		}
 	]
 }

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="eui.CheckButton$Common3" currentState="up" width="212" height="148" xmlns:e="http://ns.egret.com/eui" states="up,upAndSelected"  >
+	<e:Image    horizontalCenter="0" verticalCenter="0" source.up="btn_3_0_png" source.upAndSelected="btn_3_1_png"/>
+	<e:Image   x="20" y="78" source="txt_9p_png" x.upAndSelected="41" x.up="43" y.up="80"/>
+</e:Skin>

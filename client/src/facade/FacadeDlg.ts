@@ -1,14 +1,14 @@
 // TypeScript file
 namespace app.facade {
     export class FacadeDlg extends ui.Dialog {
-        btnWolves: eui.Button;
-        btnKing: eui.Button;
-        btnSpy: eui.Button;
+        imgWolves: eui.Image;
+        imgKing: eui.Image;
+        imgSpy: eui.Image;
         childrenCreated() {
             super.childrenCreated();
-            this.btnWolves.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnWolves, this);
-            this.btnKing.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnKing, this);
-            this.btnSpy.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnSpy, this);
+            this.imgWolves.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnWolves, this);
+            this.imgKing.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnKing, this);
+            this.imgSpy.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnSpy, this);
         }
 
 
@@ -26,9 +26,9 @@ namespace app.facade {
 
         dispose() {
             super.dispose();
-            this.btnWolves.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnWolves, this);
-            this.btnKing.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnKing, this);
-            this.btnSpy.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnSpy, this);
+            this.imgWolves.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnWolves, this);
+            this.imgKing.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnKing, this);
+            this.imgSpy.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnSpy, this);
         }
 
         Partial

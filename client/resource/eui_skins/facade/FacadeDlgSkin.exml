@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="app.facade.FacadeDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Rect left="0" right="0" top="0" bottom="0" fillColor="0x52e5e5"/>
-	<e:Label text="BOARDGAME BOX" y="162" horizontalCenter="0" textAlign="center" stroke="3" textColor="0xffffff" strokeColor="0xc4801b" size="40"/>
-	<e:Button id="btnWolves" y="430" horizontalCenter="0" skinName="eui.Button$Common" label="Werewolves" width="250"/>
-	<e:Button id="btnKing" y="558" horizontalCenter="0" skinName="eui.Button$Common" label="The King's game" width="250"/>
-	<e:Button id="btnSpy" y="698" horizontalCenter="0" skinName="eui.Button$Common" label="Who is ths spy" width="250"/>
+	<e:Image source="img_rukoubg_jpg" width="720" height="1280" y="0" horizontalCenter="0"/>
+	<e:Image id="imgWolves" y="211" source="btn_wolves_png" horizontalCenter="0"/>
+	<e:Image id="imgKing" source="btn_king_png" y="428" horizontalCenter="0"/>
+	<e:Image id="imgSpy" source="btn_spy_png" y="665" horizontalCenter="0"/>
+	<e:Image y="1131" horizontalCenter="0" source="img_logo_png"/>
 </e:Skin>

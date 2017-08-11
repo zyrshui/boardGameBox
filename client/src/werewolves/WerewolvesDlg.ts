@@ -4,14 +4,15 @@ namespace app.werewolves {
         txt: string
     }
     export class WerewolvesDlg extends ui.Dialog {
-        btnModel9: eui.Button;
-        btnModel12: eui.Button;
+        btnModel9: eui.CheckBox;
+        btnModel12: eui.CheckBox;
         lblTotal: eui.Label;
         tbrVilligers: eui.TabBar;
         tbrWolves: eui.TabBar;
         TempText: string;
         grpCheck: eui.Group;
         btnStart: eui.Button;
+        btnBack:eui.Button;
         childrenCreated() {
             super.childrenCreated();
             this.initData();
@@ -21,14 +22,15 @@ namespace app.werewolves {
 
         dispose() {
             super.dispose();
-            this.btnModel9.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnModel9, this);
-            this.btnModel12.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnModel12, this);
+            this.btnModel9.removeEventListener(eui.UIEvent.CHANGE, this.onBtnModel9, this);
+            this.btnModel12.removeEventListener(eui.UIEvent.CHANGE, this.onBtnModel12, this);
             this.tbrVilligers.removeEventListener(eui.ItemTapEvent.ITEM_TAP, this.onTbrVilligersItemTap, this);
             this.tbrWolves.removeEventListener(eui.ItemTapEvent.ITEM_TAP, this.onTbrWolvesItemTap, this);
             this.grpCheck.$children.forEach(child => {
                 child.removeEventListener(eui.UIEvent.CHANGE, this.onCheckChange, this);
             });
             this.btnStart.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnStartGame, this);
+            this.btnBack.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
         }
 
         initData() {
@@ -39,14 +41,15 @@ namespace app.werewolves {
         }
 
         registerEvent() {
-            this.btnModel9.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnModel9, this);
-            this.btnModel12.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnModel12, this);
+            this.btnModel9.addEventListener(eui.UIEvent.CHANGE, this.onBtnModel9, this);
+            this.btnModel12.addEventListener(eui.UIEvent.CHANGE, this.onBtnModel12, this);
             this.tbrVilligers.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onTbrVilligersItemTap, this);
             this.tbrWolves.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onTbrWolvesItemTap, this);
             this.grpCheck.$children.forEach(child => {
                 child.addEventListener(eui.UIEvent.CHANGE, this.onCheckChange, this);
             });
             this.btnStart.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnStartGame, this);
+            this.btnBack.addEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
         }
 
         onBtnModel9() {
