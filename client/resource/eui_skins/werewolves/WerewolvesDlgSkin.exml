@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="app.werewolves.WerewolvesDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Image source="img_bg2_jpg" horizontalCenter="0"/>
-	<e:Image source="test_jpg" horizontalCenter="0" visible="false"/>
     <e:Label text="Werewolves" y="162" horizontalCenter="0" textAlign="center" stroke="3" textColor="0xffffff"
              strokeColor="0xc4801b" size="40" />
 	<e:CheckBox id="btnModel9" label="" y="222" anchorOffsetX="0" horizontalCenter="-142" skinName="eui.CheckButton$Common3"/>
@@ -43,7 +42,7 @@
 		<e:CheckBox name="Hunter" label="hunter" y="63" skinName="eui.CheckButton$Common" horizontalCenter="-48" x="293" scaleX="1" scaleY="1"/>
 		<e:CheckBox name="Witch" label="witch" y="63" skinName="eui.CheckButton$Common" horizontalCenter="152" x="493" scaleX="1" scaleY="1"/>
 		<e:CheckBox name="Savior" label="savior" y="179" skinName="eui.CheckButton$Common" horizontalCenter="-248" x="93" scaleX="1" scaleY="1"/>
-		<e:CheckBox name="Wolf King" label="wolf king" y="189" skinName="eui.CheckButton$Common" horizontalCenter="-48" x="293" scaleX="1" scaleY="1"/>
+		<e:CheckBox name="Wolf King" label="wolf\nking" y="189" skinName="eui.CheckButton$Common" horizontalCenter="-48" x="293" scaleX="1" scaleY="1"/>
 		<e:CheckBox name="Seer" label="seer" y="189" skinName="eui.CheckButton$Common" horizontalCenter="152" x="493" scaleX="1" scaleY="1"/>
 		<e:layout>
 			<e:TileLayout orientation="rows" horizontalAlign="contentJustify" requestedRowCount="2" requestedColumnCount="3" rowAlign="justifyUsingGap" columnAlign="justifyUsingGap"/>

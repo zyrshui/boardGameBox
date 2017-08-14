@@ -42,7 +42,7 @@ namespace app.werewolves {
         }
 
         onBtnEnd() {
-            ui.msgBox('quit game?',{ buttons: ui.MessageButton.YesNo }, (e: ui.DialogEvent) => {
+            ui.msgBox('quit game?', { buttons: ui.MessageButton.YesNo }, (e: ui.DialogEvent) => {
                 e.result == ui.DialogResult.Yes ? this.close() : "";
             })
         }
@@ -55,7 +55,8 @@ namespace app.werewolves {
                 source.push({
                     job: job,
                     index: i + 1,
-                    showJob: showJob
+                    showJob: showJob,
+                    card: showJob ? manager.werewolves.getJobImage(job) : "card_bg_jpg"
                 });
             }
             arrCollect.source = source;

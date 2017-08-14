@@ -97,7 +97,7 @@ namespace app.werewolves {
                 manager.werewolves.players[child.name] = child.selected ? 1 : 0;
                 return child.selected == true;
             })
-            manager.werewolves.players['Villiger'] = villigers;
+            manager.werewolves.players['Villager'] = villigers;
             manager.werewolves.players['Wolves'] = wolves;
             this.notifyTotalChange(villigers + wolves + findSpecials.length);
         }

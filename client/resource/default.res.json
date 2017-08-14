@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "card_bg_jpg,Seer_jpg,Idiot_jpg,Hunter_jpg,Witch_jpg,Savior_jpg,Wolf King_jpg,Villiger_jpg,Wolves_jpg,avatar_male_png,1_jpg,2_jpg,3_jpg,4_jpg,5_jpg,6_jpg,7_jpg,8_jpg,9_jpg,10_jpg,11_jpg,12_jpg,13_jpg,btn_king_png,btn_spy_png,btn_wolves_png,img_rukoubg_jpg,img_logo_png,btn_back_png,btn_common_png,img_bg1_jpg,txt_start_png,txt_back_png,txt_check_png,txt_end_png,txt_flip_png,txt_next_png,txt_play_png,txt_rule_png,img_fenge_png,test_jpg,img_bg2_jpg,btn_3_1_png,btn_2_0_png,btn_2_1_png,btn_3_0_png,img_xuanxiang_png,img_fangkuang_png,img_honghgou_png,txt_12p_png,txt_9p_png,img_tips_png,img_xiajiantou_png",
+			"keys": "card_bg_jpg,Seer_jpg,Idiot_jpg,Hunter_jpg,Witch_jpg,Savior_jpg,Wolves_jpg,1_jpg,2_jpg,3_jpg,4_jpg,5_jpg,6_jpg,7_jpg,8_jpg,9_jpg,10_jpg,11_jpg,12_jpg,13_jpg,btn_king_png,btn_spy_png,btn_wolves_png,img_rukoubg_jpg,img_logo_png,btn_back_png,btn_common_png,img_bg1_jpg,txt_start_png,txt_back_png,txt_check_png,txt_end_png,txt_flip_png,txt_next_png,txt_play_png,txt_rule_png,img_fenge_png,test_jpg,img_bg2_jpg,btn_3_1_png,btn_2_0_png,btn_2_1_png,btn_3_0_png,img_xuanxiang_png,img_fangkuang_png,img_honghgou_png,txt_12p_png,txt_9p_png,img_tips_png,img_xiajiantou_png,img_wanjiabg_png,img_bg3_jpg,Villager_jpg,Wolf King_jpg,img_wanjiabg2_png",
 			"name": "preload"
 		}
 	],
@@ -42,24 +42,9 @@
 			"name": "Savior_jpg"
 		},
 		{
-			"url": "assets/werewolves/Wolf King.jpg",
-			"type": "image",
-			"name": "Wolf King_jpg"
-		},
-		{
-			"url": "assets/werewolves/Villiger.jpg",
-			"type": "image",
-			"name": "Villiger_jpg"
-		},
-		{
 			"url": "assets/werewolves/Wolves.jpg",
 			"type": "image",
 			"name": "Wolves_jpg"
-		},
-		{
-			"url": "assets/werewolves/avatar_male.png",
-			"type": "image",
-			"name": "avatar_male_png"
 		},
 		{
 			"url": "assets/king/1.jpg",
@@ -275,6 +260,31 @@
 			"name": "img_xiajiantou_png",
 			"type": "image",
 			"url": "assets/werewolves/img_xiajiantou.png"
+		},
+		{
+			"name": "img_wanjiabg_png",
+			"type": "image",
+			"url": "assets/werewolves/img_wanjiabg.png"
+		},
+		{
+			"name": "img_bg3_jpg",
+			"type": "image",
+			"url": "assets/werewolves/img_bg3.jpg"
+		},
+		{
+			"name": "Villager_jpg",
+			"type": "image",
+			"url": "assets/werewolves/Villager.jpg"
+		},
+		{
+			"name": "Wolf King_jpg",
+			"type": "image",
+			"url": "assets/werewolves/Wolf King.jpg"
+		},
+		{
+			"name": "img_wanjiabg2_png",
+			"type": "image",
+			"url": "assets/werewolves/img_wanjiabg2.png"
 		}
 	]
 }
