@@ -1,6 +1,7 @@
 // TypeScript file
 namespace app {
-    export class Manager {
+    export class Manager extends egret.EventDispatcher {
+        static GAME_END:"event_game_end";
         werewolves:WerewolvesManager;
         facede:FacedeManager;
         king:KingManager;

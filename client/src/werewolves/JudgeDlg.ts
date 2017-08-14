@@ -43,7 +43,10 @@ namespace app.werewolves {
 
         onBtnEnd() {
             ui.msgBox('quit game?', { buttons: ui.MessageButton.YesNo }, (e: ui.DialogEvent) => {
-                e.result == ui.DialogResult.Yes ? this.close() : "";
+                if(e.result == ui.DialogResult.Yes){
+                    this.close();
+                    manager.dispatchEventWith(Manager.GAME_END);
+                }
             })
         }
 

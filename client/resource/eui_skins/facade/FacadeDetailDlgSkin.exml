@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="app.facade.FacadeDetailDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Image source="img_bg1_jpg" width="720" height="1280" horizontalCenter="0" y="0"/>
-	<e:Image source="txt_rule_png" x="127" y="260" anchorOffsetY="0"/>
-	<e:Image source="img_fenge_png" x="117" y="292" rotation="0.52"/>
-	<e:Scroller y="300" anchorOffsetX="0" width="540" anchorOffsetY="0" height="682" horizontalCenter="0.5" bounces="false">
+	<e:Image source="txt_rule_png" y="260" anchorOffsetY="0" horizontalCenter="-92"/>
+	<e:Image source="img_fenge_png" y="292" rotation="0.52" horizontalCenter="-25"/>
+	<e:Scroller y="300" anchorOffsetX="0" width="540" anchorOffsetY="0" height="682" horizontalCenter="0" bounces="false">
 		<e:Group>
         	<e:Label id="lblDesc" text="" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"  size="26" textColor="0x393939" width="500"/>
         </e:Group>

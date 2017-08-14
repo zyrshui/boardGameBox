@@ -12,7 +12,7 @@ namespace app.werewolves {
         TempText: string;
         grpCheck: eui.Group;
         btnStart: eui.Button;
-        btnBack:eui.Button;
+        btnBack: eui.Button;
         childrenCreated() {
             super.childrenCreated();
             this.initData();
@@ -51,6 +51,8 @@ namespace app.werewolves {
             this.btnStart.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnStartGame, this);
             this.btnBack.addEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
         }
+
+
 
         onBtnModel9() {
             this.tbrVilligers.selectedIndex = 0;
@@ -106,7 +108,7 @@ namespace app.werewolves {
             for (let i = 0, l = this.grpCheck.$children.length; i < l; i++) {
                 let child = this.grpCheck.$children[i] as eui.CheckBox;
                 child.selected = jobs.indexOf(child.name) > -1;
-               // child.invalidateState();
+                // child.invalidateState();
             }
         }
 

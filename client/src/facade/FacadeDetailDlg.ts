@@ -3,9 +3,9 @@ namespace app.facade {
     export class FacadeDetailDlg extends ui.Dialog {
         btnPlay: eui.Button;
         btnBack: eui.Button;
-        gameType:EGameType;
-        lblDesc:eui.Label;
-        constructor(gameType:EGameType){
+        gameType: EGameType;
+        lblDesc: eui.Label;
+        constructor(gameType: EGameType) {
             super();
             this.gameType = gameType;
         }
@@ -15,6 +15,7 @@ namespace app.facade {
             this.lblDesc.text = cfg.desc;
             this.btnBack.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnBack, this);
             this.btnPlay.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnPlay, this);
+            manager.addEventListener(Manager.GAME_END, this.close, this);
         }
 
         onBtnBack() {
@@ -29,6 +30,7 @@ namespace app.facade {
             super.dispose();
             this.btnBack.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnBack, this);
             this.btnPlay.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnPlay, this);
+            manager.removeEventListener(Manager.GAME_END, this.close, this);
         }
 
         // animatingShow() {

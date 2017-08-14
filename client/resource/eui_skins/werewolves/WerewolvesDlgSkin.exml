@@ -5,13 +5,13 @@
              strokeColor="0xc4801b" size="40" />
 	<e:CheckBox id="btnModel9" label="" y="222" anchorOffsetX="0" horizontalCenter="-142" skinName="eui.CheckButton$Common3"/>
 	<e:CheckBox id="btnModel12" label="" y="224" anchorOffsetX="0" horizontalCenter="144" skinName="eui.CheckButton$Common2"/>
-	<e:Image source="img_tips_png" x="142" y="416"/>
-	<e:Image source="img_tips_png" x="386" y="416"/>
-	<e:Image source="img_xiajiantou_png" x="470" y="572"/>
-	<e:Image source="img_xiajiantou_png" x="226" y="572"/>
-	<e:Label text="Number of\nvilligers" y="484"  size="24" textColor="0xffffff" x="184"/>
-	<e:Label text="Number of \nwolves" y="484"  textColor="0xffffff" size="24" x="436"/>
-	<e:TabBar id="tbrVilligers" y="538" itemRendererSkinName="eui.Button$TabBtn" x="209">
+	<e:Image source="img_tips_png" y="416" horizontalCenter="-114"/>
+	<e:Image source="img_tips_png" y="416" horizontalCenter="131"/>
+	<e:Image source="img_xiajiantou_png" x="470" y="572" visible="false"/>
+	<e:Image source="img_xiajiantou_png" x="226" y="572" visible="false"/>
+	<e:Label text="Number of\nvilligers" y="484"  size="24" textColor="0xffffff" horizontalCenter="-120"/>
+	<e:Label text="Number of\nwolves" y="484"  textColor="0xffffff" size="24" horizontalCenter="132"/>
+	<e:TabBar id="tbrVilligers" y="538" itemRendererSkinName="eui.Button$TabBtn" horizontalCenter="-108">
         <e:ArrayCollection>
 			<e:Array>
 				<e:Object txt="3" />
@@ -24,7 +24,7 @@
 			<e:VerticalLayout gap="0"/>
 		</e:layout>
 	</e:TabBar>
-	<e:TabBar id="tbrWolves" y="538" itemRendererSkinName="eui.Button$TabBtn" x="439">
+	<e:TabBar id="tbrWolves" y="538" itemRendererSkinName="eui.Button$TabBtn" horizontalCenter="122">
 		<e:ArrayCollection>
 		<e:Array>
 			<e:Object txt="3"/>
