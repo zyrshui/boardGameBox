@@ -12,6 +12,7 @@ namespace app.werewolves {
         imgCard: eui.Image;
         btnFlip: eui.Button;
         btnNext: eui.Button;
+        btnBack: eui.Button;
         childrenCreated() {
             super.childrenCreated();
             this.registerEvent();
@@ -23,12 +24,14 @@ namespace app.werewolves {
         registerEvent() {
             this.btnFlip.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnFlip, this);
             this.btnNext.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnNext, this);
+            this.btnBack.addEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
         }
 
         dispose() {
             super.dispose();
             this.btnFlip.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnFlip, this);
             this.btnNext.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnNext, this);
+            this.btnBack.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
         }
 
 

@@ -13,6 +13,12 @@ namespace app.werewolves {
         grpCheck: eui.Group;
         btnStart: eui.Button;
         btnBack: eui.Button;
+        imgVilliger: eui.Image;
+        imgWolves: eui.Image;
+        srcVilligers: eui.Scroller;
+        srcWolves: eui.Scroller;
+        lblSelectedVilligers: eui.Label;
+        lblSelectedWolves: eui.Label;
         childrenCreated() {
             super.childrenCreated();
             this.initData();
@@ -24,6 +30,8 @@ namespace app.werewolves {
             super.dispose();
             this.btnModel9.removeEventListener(eui.UIEvent.CHANGE, this.onBtnModel9, this);
             this.btnModel12.removeEventListener(eui.UIEvent.CHANGE, this.onBtnModel12, this);
+            this.imgVilliger.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.showDropList, this);
+            this.imgWolves.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.showDropList, this);
             this.tbrVilligers.removeEventListener(eui.ItemTapEvent.ITEM_TAP, this.onTbrVilligersItemTap, this);
             this.tbrWolves.removeEventListener(eui.ItemTapEvent.ITEM_TAP, this.onTbrWolvesItemTap, this);
             this.grpCheck.$children.forEach(child => {
@@ -31,6 +39,7 @@ namespace app.werewolves {
             });
             this.btnStart.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnStartGame, this);
             this.btnBack.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
+            manager.removeEventListener(Manager.GAME_END, this.close, this);
         }
 
         initData() {
@@ -43,6 +52,8 @@ namespace app.werewolves {
         registerEvent() {
             this.btnModel9.addEventListener(eui.UIEvent.CHANGE, this.onBtnModel9, this);
             this.btnModel12.addEventListener(eui.UIEvent.CHANGE, this.onBtnModel12, this);
+            this.imgVilliger.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showDropList, this);
+            this.imgWolves.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showDropList, this);
             this.tbrVilligers.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onTbrVilligersItemTap, this);
             this.tbrWolves.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onTbrWolvesItemTap, this);
             this.grpCheck.$children.forEach(child => {
@@ -50,8 +61,22 @@ namespace app.werewolves {
             });
             this.btnStart.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnStartGame, this);
             this.btnBack.addEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
+            manager.addEventListener(Manager.GAME_END, this.close, this);
         }
 
+        showDropList(e:egret.TouchEvent) {
+            let target = e.currentTarget as egret.DisplayObject;
+            let src = this[target.name];
+            egret.Tween.get(src).to({ height: 200 }, 300).call(()=>{
+                egret.Tween.removeTweens(src);
+            });
+        }
+
+         hideDropList(src:eui.Scroller) {
+            egret.Tween.get(src).to({ height: 0 }, 300).call(()=>{
+                egret.Tween.removeTweens(src);
+            });
+        }
 
 
         onBtnModel9() {
@@ -69,10 +94,12 @@ namespace app.werewolves {
         }
 
         onTbrVilligersItemTap(e: eui.ItemTapEvent) {
+            this.hideDropList(this.srcVilligers);
             this.calPlayModel();
         }
 
         onTbrWolvesItemTap(e: eui.ItemTapEvent) {
+            this.hideDropList(this.srcWolves);
             this.calPlayModel();
         }
 
@@ -82,12 +109,12 @@ namespace app.werewolves {
 
         onBtnStartGame() {
             ui.show(CardDlg);
-            this.close();
         }
 
         updateView() {
             this.calPlayModel();
         }
+
 
         calPlayModel() {
             let villigers = 0, wolves = 0, specials = 0;
@@ -99,6 +126,8 @@ namespace app.werewolves {
                 manager.werewolves.players[child.name] = child.selected ? 1 : 0;
                 return child.selected == true;
             })
+            this.lblSelectedVilligers.text = villigers;
+            this.lblSelectedWolves.text = wolves;
             manager.werewolves.players['Villager'] = villigers;
             manager.werewolves.players['Wolves'] = wolves;
             this.notifyTotalChange(villigers + wolves + findSpecials.length);
@@ -108,7 +137,6 @@ namespace app.werewolves {
             for (let i = 0, l = this.grpCheck.$children.length; i < l; i++) {
                 let child = this.grpCheck.$children[i] as eui.CheckBox;
                 child.selected = jobs.indexOf(child.name) > -1;
-                // child.invalidateState();
             }
         }
 

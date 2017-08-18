@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "card_bg_jpg,Seer_jpg,Idiot_jpg,Hunter_jpg,Witch_jpg,Savior_jpg,Wolves_jpg,1_jpg,2_jpg,3_jpg,4_jpg,5_jpg,6_jpg,7_jpg,8_jpg,9_jpg,10_jpg,11_jpg,12_jpg,13_jpg,btn_king_png,btn_spy_png,btn_wolves_png,img_rukoubg_jpg,img_logo_png,btn_back_png,btn_common_png,img_bg1_jpg,txt_start_png,txt_back_png,txt_check_png,txt_end_png,txt_flip_png,txt_next_png,txt_play_png,txt_rule_png,img_fenge_png,test_jpg,img_bg2_jpg,btn_3_1_png,btn_2_0_png,btn_2_1_png,btn_3_0_png,img_xuanxiang_png,img_fangkuang_png,img_honghgou_png,txt_12p_png,txt_9p_png,img_tips_png,img_xiajiantou_png,img_wanjiabg_png,img_bg3_jpg,Villager_jpg,Wolf King_jpg,img_wanjiabg2_png",
+			"keys": "card_bg_jpg,Seer_jpg,Idiot_jpg,Hunter_jpg,Witch_jpg,Savior_jpg,Wolves_jpg,1_jpg,2_jpg,3_jpg,4_jpg,5_jpg,6_jpg,7_jpg,8_jpg,9_jpg,10_jpg,11_jpg,12_jpg,13_jpg,btn_king_png,btn_spy_png,btn_wolves_png,img_rukoubg_jpg,img_logo_png,btn_back_png,btn_common_png,img_bg1_jpg,txt_start_png,txt_back_png,txt_check_png,txt_end_png,txt_flip_png,txt_next_png,txt_play_png,txt_rule_png,img_fenge_png,test_jpg,img_bg2_jpg,btn_3_1_png,btn_2_0_png,btn_2_1_png,btn_3_0_png,img_xuanxiang_png,img_fangkuang_png,img_honghgou_png,txt_12p_png,txt_9p_png,img_tips_png,img_xiajiantou_png,img_wanjiabg_png,img_bg3_jpg,Villager_jpg,Wolf King_jpg,img_wanjiabg2_png,img_xuanzhong_png,img_1_png,img_2_png,img_querenkuang_png,img_wangkuang_png,txt_yes_png,txt_no_png",
 			"name": "preload"
 		}
 	],
@@ -285,6 +285,41 @@
 			"name": "img_wanjiabg2_png",
 			"type": "image",
 			"url": "assets/werewolves/img_wanjiabg2.png"
+		},
+		{
+			"name": "img_xuanzhong_png",
+			"type": "image",
+			"url": "assets/common/img_xuanzhong.png"
+		},
+		{
+			"name": "img_1_png",
+			"type": "image",
+			"url": "assets/common/img_1.png"
+		},
+		{
+			"name": "img_2_png",
+			"type": "image",
+			"url": "assets/common/img_2.png"
+		},
+		{
+			"name": "img_querenkuang_png",
+			"type": "image",
+			"url": "assets/common/img_querenkuang.png"
+		},
+		{
+			"name": "img_wangkuang_png",
+			"type": "image",
+			"url": "assets/common/img_wangkuang.png"
+		},
+		{
+			"name": "txt_yes_png",
+			"type": "image",
+			"url": "assets/common/txt_yes.png"
+		},
+		{
+			"name": "txt_no_png",
+			"type": "image",
+			"url": "assets/common/txt_no.png"
 		}
 	]
 }

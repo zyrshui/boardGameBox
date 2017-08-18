@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="app.king_game.DropListViewSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up,down" >
-<e:Rect width="240" height="44" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" strokeColor="0x000000" fillColor="0xffa900" strokeWeight="2" fillColor.down="0xff4100"/>
-	<e:Label id="lblModel" text="{data.txt}" horizontalCenter="0" verticalCenter="0"/>
-</e:Skin>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="eui.CheckButton$Common" currentState="up" width="116" height="94"  xmlns:e="http://ns.egret.com/eui" states="up,upAndSelected"  >
-	<e:Image source="img_xuanxiang_png"  />
+<e:Skin class="eui.CheckButton$Common" currentState="up" width="130" height="94"  xmlns:e="http://ns.egret.com/eui" states="up,upAndSelected"  >
+	<e:Image source="img_xuanxiang_png"   left="0" right="0" top="0" bottom="0"/>
 	<e:Image  source="img_fangkuang_png" y="33" x="22"/>
-    <e:Label id="labelDisplay"    textAlign="center" x="41"   size="24" textColor="0x393929" y="27" text="Seer"/>
+    <e:Label id="labelDisplay"    textAlign="center" x="41"   size="24" textColor="0x393929" y="27" text="Hunter"/>
 	<e:Image source="img_honghgou_png" includeIn="upAndSelected" x="21" y="30"/>
 </e:Skin>

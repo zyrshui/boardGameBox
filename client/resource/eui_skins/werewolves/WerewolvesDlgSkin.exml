@@ -1,52 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="app.werewolves.WerewolvesDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image source="img_bg2_jpg" horizontalCenter="0"/>
-    <e:Label text="Werewolves" y="162" horizontalCenter="0" textAlign="center" stroke="3" textColor="0xffffff"
-             strokeColor="0xc4801b" size="40" />
+	<e:Image source="img_bg2_jpg" horizontalCenter="-1" y="-1"/>
+
 	<e:CheckBox id="btnModel9" label="" y="222" anchorOffsetX="0" horizontalCenter="-142" skinName="eui.CheckButton$Common3"/>
 	<e:CheckBox id="btnModel12" label="" y="224" anchorOffsetX="0" horizontalCenter="144" skinName="eui.CheckButton$Common2"/>
-	<e:Image source="img_tips_png" y="416" horizontalCenter="-114"/>
-	<e:Image source="img_tips_png" y="416" horizontalCenter="131"/>
+
+	<e:Image source="img_tips_png" y="416" horizontalCenter="120"/>
 	<e:Image source="img_xiajiantou_png" x="470" y="572" visible="false"/>
 	<e:Image source="img_xiajiantou_png" x="226" y="572" visible="false"/>
-	<e:Label text="Number of\nvilligers" y="484"  size="24" textColor="0xffffff" horizontalCenter="-120"/>
-	<e:Label text="Number of\nwolves" y="484"  textColor="0xffffff" size="24" horizontalCenter="132"/>
-	<e:TabBar id="tbrVilligers" y="538" itemRendererSkinName="eui.Button$TabBtn" horizontalCenter="-108">
-        <e:ArrayCollection>
-			<e:Array>
-				<e:Object txt="3" />
-				<e:Object txt="4" />
-				<e:Object txt="5" />
-				<e:Object txt="6" />
-			</e:Array>
-		</e:ArrayCollection>
-		<e:layout>
-			<e:VerticalLayout gap="0"/>
-		</e:layout>
-	</e:TabBar>
-	<e:TabBar id="tbrWolves" y="538" itemRendererSkinName="eui.Button$TabBtn" horizontalCenter="122">
-		<e:ArrayCollection>
-		<e:Array>
-			<e:Object txt="3"/>
-			<e:Object txt="4"/>
-			<e:Object txt="5"/>
-			<e:Object txt="6"/>
-		</e:Array>
-		</e:ArrayCollection>
-		<e:layout>
-		<e:VerticalLayout gap="0"/>
-		</e:layout>
-	</e:TabBar>
 	<e:Group id="grpCheck" height="204" y="704" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" width="520">
-		<e:CheckBox name="Idiot" label="idiot" y="63" skinName="eui.CheckButton$Common" horizontalCenter="-248" x="93" scaleX="1" scaleY="1"/>
-		<e:CheckBox name="Hunter" label="hunter" y="63" skinName="eui.CheckButton$Common" horizontalCenter="-48" x="293" scaleX="1" scaleY="1"/>
-		<e:CheckBox name="Witch" label="witch" y="63" skinName="eui.CheckButton$Common" horizontalCenter="152" x="493" scaleX="1" scaleY="1"/>
-		<e:CheckBox name="Savior" label="savior" y="179" skinName="eui.CheckButton$Common" horizontalCenter="-248" x="93" scaleX="1" scaleY="1"/>
-		<e:CheckBox name="Wolf King" label="wolf\nking" y="189" skinName="eui.CheckButton$Common" horizontalCenter="-48" x="293" scaleX="1" scaleY="1"/>
-		<e:CheckBox name="Seer" label="seer" y="189" skinName="eui.CheckButton$Common" horizontalCenter="152" x="493" scaleX="1" scaleY="1"/>
+		<e:CheckBox name="Idiot" label="Idiot" y="63" skinName="eui.CheckButton$Common" horizontalCenter="-150" x="93" scaleX="1" scaleY="1"/>
+		<e:CheckBox name="Hunter" label="Hunter" y="63" skinName="eui.CheckButton$Common" horizontalCenter="0" x="293" scaleX="1" scaleY="1"/>
+		<e:CheckBox name="Witch" label="Witch" y="63" skinName="eui.CheckButton$Common" horizontalCenter="150" x="493" scaleX="1" scaleY="1"/>
+		<e:CheckBox name="Savior" label="Savior" y="179" skinName="eui.CheckButton$Common" horizontalCenter="-150" x="93" scaleX="1" scaleY="1"/>
+		<e:CheckBox name="Wolf King" label="Wolf\nking" y="189" skinName="eui.CheckButton$Common" horizontalCenter="0" x="293" scaleX="1" scaleY="1"/>
+		<e:CheckBox name="Seer" label="Seer" y="189" skinName="eui.CheckButton$Common" horizontalCenter="150" x="493" scaleX="1" scaleY="1"/>
 		<e:layout>
-			<e:TileLayout orientation="rows" horizontalAlign="contentJustify" requestedRowCount="2" requestedColumnCount="3" rowAlign="justifyUsingGap" columnAlign="justifyUsingGap"/>
+		<e:TileLayout orientation="rows" horizontalAlign="contentJustify" requestedRowCount="2" requestedColumnCount="3" rowAlign="justifyUsingGap" columnAlign="justifyUsingGap"/>
 		</e:layout>
+	</e:Group>
+	<e:Group height="200" y="428" horizontalCenter="-120">
+		<e:Image source="img_tips_png" y="-12" horizontalCenter="0" x="6" scaleX="1" scaleY="1"/>
+		<e:Label text="Number of\nvilligers" y="60" size="24" textColor="0xffffff" horizontalCenter="0" textAlign="center" x="-10" scaleX="1" scaleY="1"/>
+
+		<e:Image id="imgVilliger" name="srcVilligers" width="150" height="44" y="113" source="img_1_png" horizontalCenter="0"/>
+		<e:Label id="lblSelectedVilligers" text="3" y="120" horizontalCenter="0.5" touchEnabled="false" x="100" scaleX="1" scaleY="1"/>
+		<e:Scroller id="srcVilligers" width="150" height="0" y="158" anchorOffsetX="0" horizontalCenter="0" bounces="false" scrollPolicyH="off" x="-14" scaleX="1" scaleY="1">
+			<e:TabBar id="tbrVilligers" y="-2" horizontalCenter="0" itemRendererSkinName="app.wgt.DropListViewSkin">
+			<e:ArrayCollection>
+				<e:Array>
+				<e:Object txt="3" source="img_2_png"/>
+				<e:Object txt="4" source="img_1_png"/>
+				<e:Object txt="5" source="img_2_png"/>
+				<e:Object txt="6" source="img_1_png"/>
+				</e:Array>
+			</e:ArrayCollection>
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+			</e:TabBar>
+		</e:Scroller>
+	</e:Group>
+	<e:Group height="200" y="428" horizontalCenter="120">
+		<e:Image source="img_tips_png" y="-12" horizontalCenter="0" x="6" scaleX="1" scaleY="1"/>
+		<e:Label text="Number of\nWolf" y="60" size="24" textColor="0xffffff" horizontalCenter="0" textAlign="center" x="-10" scaleX="1" scaleY="1"/>
+
+		<e:Image id="imgWolves" name="srcWolves" width="140" height="44" y="113" source="img_1_png" horizontalCenter="0"/>
+		<e:Label id="lblSelectedWolves" text="3" y="120" horizontalCenter="0.5" touchEnabled="false" x="100" scaleX="1" scaleY="1"/>
+		<e:Scroller id="srcWolves" width="150" height="0" y="158" anchorOffsetX="0" horizontalCenter="0" bounces="false" scrollPolicyH="off" x="-14" scaleX="1" scaleY="1">
+			<e:TabBar id="tbrWolves" y="-2" horizontalCenter="0" itemRendererSkinName="app.wgt.DropListViewSkin">
+			<e:ArrayCollection>
+				<e:Array>
+				<e:Object txt="3" source="img_2_png"/>
+				<e:Object txt="4" source="img_1_png"/>
+				<e:Object txt="5" source="img_2_png"/>
+				<e:Object txt="6" source="img_1_png"/>
+				</e:Array>
+			</e:ArrayCollection>
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+			</e:TabBar>
+		</e:Scroller>
 	</e:Group>
 	<e:Label id="lblTotal" text="Total: {0} players" y="984" size="36" horizontalCenter="0" textColor="0xeefdff"/>
 	<e:Button id="btnStart" label="" y="1042" horizontalCenter="0" skinName="eui.Button$Common" icon="txt_start_png"/>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="app.wgt.DropListViewSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up,down"  width="150" height="44">
+	<e:Image source="{data.source}" left="0" right="0" top="0" bottom="0"/>
+	<e:Label id="lblModel" text="{data.txt}" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image source="img_xuanzhong_png" includeIn="down" left="0" right="0" top="0" bottom="0" scale9Grid="5,5,30,30"/>
+</e:Skin>

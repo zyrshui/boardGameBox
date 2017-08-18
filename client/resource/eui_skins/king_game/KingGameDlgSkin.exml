@@ -11,7 +11,7 @@
             strokeColor="0x000000" fillColor="0xffa900" strokeWeight="2" />
     <e:Label id="lblSelectedModel" text="9" y="400" horizontalCenter="0" touchEnabled="false" />
     <e:Scroller id="srcKings" width="240" height="0" y="434" anchorOffsetX="0" horizontalCenter="0" bounces="false" scrollPolicyH="off">
-        <e:TabBar id="tbrKings" y="-2" horizontalCenter="0" itemRendererSkinName="app.king_game.DropListViewSkin">
+        <e:TabBar id="tbrKings" y="-2" horizontalCenter="0" itemRendererSkinName="app.wgt.DropListViewSkin">
             <e:ArrayCollection>
                 <e:Array>
                     <e:Object txt="6" />
