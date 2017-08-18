@@ -4,7 +4,7 @@ namespace app.king_game {
         txt: string
     }
     export class KingGameDlg extends ui.Dialog {
-        recTouch: eui.Rect;
+        imgTouch: eui.Image;
         tbrKings: eui.TabBar;
         srcKings: eui.Scroller;
         lblSelectedModel: eui.Label;
@@ -16,7 +16,7 @@ namespace app.king_game {
         }
 
         registerEvent() {
-            this.recTouch.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showDropList, this);
+            this.imgTouch.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showDropList, this);
             this.tbrKings.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onTbrKingsItemTap, this);
             this.btnStart.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGame, this);
         }
@@ -49,7 +49,7 @@ namespace app.king_game {
 
         dispose() {
             super.dispose();
-            this.recTouch.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.showDropList, this);
+            this.imgTouch.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.showDropList, this);
         }
     }
 }
