@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="app.king_game.KingGameDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing">
-    <e:Rect left="0" right="0" top="0" bottom="0" fillColor="0x52e5e5" locked="true" />
-    <e:Label text="The King's Game" y="162" horizontalCenter="0" textAlign="center" stroke="3" textColor="0xffffff"
-             strokeColor="0xc4801b" size="40" />
-    <e:Label text="Number of Players" y="310" textColor="0x725e08" stroke="1" strokeColor="0xffffff"
-             horizontalCenter="0.5" />
-    <e:Button id="btnStart" label="Start" y="1092" skinName="eui.Button$Common" horizontalCenter="0" />
-	<e:Image id="imgTouch" source="img_1_png" y="388" width="150" height="44" horizontalCenter="0"/>
-    <e:Label id="lblSelectedModel" text="9" y="396" horizontalCenter="0.5" touchEnabled="false" />
-    <e:Scroller id="srcKings" width="150" height="0" y="434" anchorOffsetX="0" horizontalCenter="0" bounces="false" scrollPolicyH="off">
+    <e:Image horizontalCenter="0" y="0" source="img_gwbg2_jpg"/>
+	<e:Label text="Number of players" y="356" horizontalCenter="0" size="36"/>
+    <e:Button id="btnBack" label="" y="8" horizontalCenter="-273" icon="txt_back_png" skinName="eui.Button$Back"/>
+    <e:Button id="btnStart" label="" y="778" skinName="eui.Button$Common" horizontalCenter="0"  icon="txt_start_png"/>
+	<e:Image id="imgTouch" y="450" width="150" height="44" horizontalCenter="0" source="img_2_png"/>
+    <e:Label id="lblSelectedModel" text="9" y="458" horizontalCenter="0.5" touchEnabled="false" />
+    <e:Scroller id="srcKings" width="150" height="0" y="496" anchorOffsetX="0" horizontalCenter="0" bounces="false" scrollPolicyH="off">
         <e:TabBar id="tbrKings" y="-2" horizontalCenter="0" itemRendererSkinName="app.wgt.DropListViewSkin">
             <e:ArrayCollection>
                 <e:Array>

@@ -11,7 +11,7 @@
 					<e:Image source="img_wanjiabg2_png" x="0" y="0"/>
 					<e:Label text="{data.index}" verticalAlign="middle" size="20"  textColor="0xffffff"/>
 				</e:Group>
-	<e:Label text="{data.job}" horizontalCenter="0" size="30" y="80" visible="{data.showJob}"/>
+	<e:Label text="{data.index}" horizontalCenter="0" size="30" y="80" visible="{data.showJob}"/>
 			</e:Skin>
 		</e:itemRendererSkinName>
 		<e:layout>

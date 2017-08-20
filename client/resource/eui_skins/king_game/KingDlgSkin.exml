@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="app.king_game.KingDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing">
-	<e:Rect left="2" right="-2" top="0" bottom="0" fillColor="0x52e5e5" locked="true" />
-	<e:Label id="lblTitle" text="Player %s is King" y="162" horizontalCenter="0" textAlign="center" stroke="3" textColor="0xffffff"
-	         strokeColor="0xc4801b" size="40" />
-	<e:List id="listHead" width="570" height="674" y="284" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0">
+	<e:Image horizontalCenter="0" y="0" source="img_gwbg2_jpg" />
+	<e:Image source="test2_jpg" horizontalCenter="0"  visible="false"/>
+	<e:Label id="lblTitle" text="Player %s is King" y="238" horizontalCenter="0" textAlign="center" textColor="0xffffff"
+	         size="40" />
+	<e:List id="listHead" width="480" height="640" y="318" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0">
 		<e:itemRendererSkinName>
-			<e:Skin width="120" height="120">
-				<e:Label text="{data.index}" horizontalCenter="0" size="20" verticalCenter="0" />
-				<e:Group width="120" height="120" anchorOffsetX="60" anchorOffsetY="60" x="60" y="60">
-					<e:Image source="avatar_male_png" top="0" right="0" bottom="0" left="0" />
-					<e:Label text="{data.job}" verticalAlign="middle" size="50" textColor="0xffc105" />
-				</e:Group>
+			<e:Skin width="86" height="122">
+				<e:Image top="0" right="0" bottom="0" left="0" source="king_card_bg_png" scaleX="0"/>
+				<e:Image top="0" right="0" bottom="0" left="0" source="{data.source}"  />
+				<e:Image source="img_wanjiabg2_png" x="0" y="0"  visible="false"/>
+				<e:Label text="{data.index}" verticalAlign="middle" size="20" textColor="0xffffff" visible="false"/>
 			</e:Skin>
 		</e:itemRendererSkinName>
 		<e:layout>
-			<e:TileLayout   horizontalGap="20"/>
+			<e:TileLayout horizontalGap="40" requestedColumnCount="4" horizontalAlign="center" verticalGap="40" />
 		</e:layout>
 		<e:ArrayCollection>
 			<e:Array></e:Array>
 		</e:ArrayCollection>
 	</e:List>
-	<e:Button id="btnEnd" label="End" y="1092" skinName="eui.Button$Common" horizontalCenter="0" />
+	<e:Button id="btnEnd" label="" y="798" skinName="eui.Button$Common" horizontalCenter="0" icon="txt_end_png" />
+	<e:Image x="224" y="448" />
 </e:Skin>

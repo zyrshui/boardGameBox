@@ -11,7 +11,7 @@ namespace app.king_game {
         imgCard: eui.Image;
         btnFlip: eui.Button;
         btnNext: eui.Button;
-        lblJob: eui.Label;
+        btnBack: eui.Button;
         childrenCreated() {
             super.childrenCreated();
             this.registerEvent();
@@ -23,12 +23,14 @@ namespace app.king_game {
         registerEvent() {
             this.btnFlip.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnFlip, this);
             this.btnNext.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnNext, this);
+            this.btnBack.addEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
         }
 
         dispose() {
             super.dispose();
             this.btnFlip.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnFlip, this);
             this.btnNext.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnNext, this);
+            this.btnBack.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
         }
 
 
@@ -46,14 +48,12 @@ namespace app.king_game {
 
         showPositive() {
             this.lblTitle.text = this.tempPlayText.format(this.index + 1);
-            this.imgCard.source = 'card_bg_jpg';
-            this.lblJob.text = "";
+            this.imgCard.source = 'king_card_bg_png';
         }
 
         showBack() {
             this.lblDesc.text = this.playerList.length == this.index + 1 ? t.FLIP_CARD_END : t.FLIP_CARD;
             this.imgCard.source = manager.king.getJobImage(this.curJob);
-            this.lblJob.text = manager.king.getJobDesc(this.curJob);
         }
 
         onBtnFlip() {

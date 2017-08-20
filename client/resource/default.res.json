@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "card_bg_jpg,Seer_jpg,Idiot_jpg,Hunter_jpg,Witch_jpg,Savior_jpg,Wolves_jpg,1_jpg,2_jpg,3_jpg,4_jpg,5_jpg,6_jpg,7_jpg,8_jpg,9_jpg,10_jpg,11_jpg,12_jpg,13_jpg,btn_king_png,btn_spy_png,btn_wolves_png,img_rukoubg_jpg,img_logo_png,btn_back_png,btn_common_png,img_bg1_jpg,txt_start_png,txt_back_png,txt_check_png,txt_end_png,txt_flip_png,txt_next_png,txt_play_png,txt_rule_png,img_fenge_png,test_jpg,img_bg2_jpg,btn_3_1_png,btn_2_0_png,btn_2_1_png,btn_3_0_png,img_xuanxiang_png,img_fangkuang_png,img_honghgou_png,txt_12p_png,txt_9p_png,img_tips_png,img_xiajiantou_png,img_wanjiabg_png,img_bg3_jpg,Villager_jpg,Wolf King_jpg,img_wanjiabg2_png,img_xuanzhong_png,img_1_png,img_2_png,img_querenkuang_png,img_wangkuang_png,txt_yes_png,txt_no_png",
+			"keys": "card_bg_jpg,Seer_jpg,Idiot_jpg,Hunter_jpg,Witch_jpg,Savior_jpg,Wolves_jpg,btn_king_png,btn_spy_png,btn_wolves_png,img_rukoubg_jpg,img_logo_png,btn_back_png,btn_common_png,txt_start_png,txt_back_png,txt_check_png,txt_end_png,txt_flip_png,txt_next_png,txt_play_png,txt_rule_png,img_fenge_png,img_bg2_jpg,btn_3_1_png,btn_2_0_png,btn_2_1_png,btn_3_0_png,img_xuanxiang_png,img_fangkuang_png,img_honghgou_png,txt_12p_png,txt_9p_png,img_tips_png,img_xiajiantou_png,img_wanjiabg_png,img_bg3_jpg,Villager_jpg,Wolf King_jpg,img_wanjiabg2_png,img_xuanzhong_png,img_1_png,img_2_png,img_querenkuang_png,img_wangkuang_png,txt_yes_png,txt_no_png,img_gwbg2_jpg,img_facade_bg1_jpg,img_facade_bg2_jpg,test2_jpg,king_card_bg_png,1_png,2_png,3_png,4_png,5_png,6_png,7_png,8_png,9_png,10_png,13_png,12_png,11_png",
 			"name": "preload"
 		}
 	],
@@ -47,71 +47,6 @@
 			"name": "Wolves_jpg"
 		},
 		{
-			"url": "assets/king/1.jpg",
-			"type": "image",
-			"name": "1_jpg"
-		},
-		{
-			"url": "assets/king/2.jpg",
-			"type": "image",
-			"name": "2_jpg"
-		},
-		{
-			"url": "assets/king/3.jpg",
-			"type": "image",
-			"name": "3_jpg"
-		},
-		{
-			"url": "assets/king/4.jpg",
-			"type": "image",
-			"name": "4_jpg"
-		},
-		{
-			"url": "assets/king/5.jpg",
-			"type": "image",
-			"name": "5_jpg"
-		},
-		{
-			"url": "assets/king/6.jpg",
-			"type": "image",
-			"name": "6_jpg"
-		},
-		{
-			"url": "assets/king/7.jpg",
-			"type": "image",
-			"name": "7_jpg"
-		},
-		{
-			"url": "assets/king/8.jpg",
-			"type": "image",
-			"name": "8_jpg"
-		},
-		{
-			"url": "assets/king/9.jpg",
-			"type": "image",
-			"name": "9_jpg"
-		},
-		{
-			"url": "assets/king/10.jpg",
-			"type": "image",
-			"name": "10_jpg"
-		},
-		{
-			"url": "assets/king/11.jpg",
-			"type": "image",
-			"name": "11_jpg"
-		},
-		{
-			"url": "assets/king/12.jpg",
-			"type": "image",
-			"name": "12_jpg"
-		},
-		{
-			"url": "assets/king/13.jpg",
-			"type": "image",
-			"name": "13_jpg"
-		},
-		{
 			"name": "btn_king_png",
 			"type": "image",
 			"url": "assets/facade/btn_king.png"
@@ -145,11 +80,6 @@
 			"name": "btn_common_png",
 			"type": "image",
 			"url": "assets/common/btn_common.png"
-		},
-		{
-			"name": "img_bg1_jpg",
-			"type": "image",
-			"url": "assets/facade/img_bg1.jpg"
 		},
 		{
 			"name": "txt_start_png",
@@ -195,11 +125,6 @@
 			"name": "img_fenge_png",
 			"type": "image",
 			"url": "assets/facade/img_fenge.png"
-		},
-		{
-			"name": "test_jpg",
-			"type": "image",
-			"url": "assets/werewolves/test.jpg"
 		},
 		{
 			"name": "img_bg2_jpg",
@@ -320,6 +245,96 @@
 			"name": "txt_no_png",
 			"type": "image",
 			"url": "assets/common/txt_no.png"
+		},
+		{
+			"name": "img_gwbg2_jpg",
+			"type": "image",
+			"url": "assets/king/img_gwbg2.jpg"
+		},
+		{
+			"name": "img_facade_bg1_jpg",
+			"type": "image",
+			"url": "assets/facade/img_facade_bg1.jpg"
+		},
+		{
+			"name": "img_facade_bg2_jpg",
+			"type": "image",
+			"url": "assets/facade/img_facade_bg2.jpg"
+		},
+		{
+			"name": "test2_jpg",
+			"type": "image",
+			"url": "assets/king/test.jpg"
+		},
+		{
+			"name": "king_card_bg_png",
+			"type": "image",
+			"url": "assets/king/king_card_bg.png"
+		},
+		{
+			"name": "1_png",
+			"type": "image",
+			"url": "assets/king/1.png"
+		},
+		{
+			"name": "2_png",
+			"type": "image",
+			"url": "assets/king/2.png"
+		},
+		{
+			"name": "3_png",
+			"type": "image",
+			"url": "assets/king/3.png"
+		},
+		{
+			"name": "4_png",
+			"type": "image",
+			"url": "assets/king/4.png"
+		},
+		{
+			"name": "5_png",
+			"type": "image",
+			"url": "assets/king/5.png"
+		},
+		{
+			"name": "6_png",
+			"type": "image",
+			"url": "assets/king/6.png"
+		},
+		{
+			"name": "7_png",
+			"type": "image",
+			"url": "assets/king/7.png"
+		},
+		{
+			"name": "8_png",
+			"type": "image",
+			"url": "assets/king/8.png"
+		},
+		{
+			"name": "9_png",
+			"type": "image",
+			"url": "assets/king/9.png"
+		},
+		{
+			"name": "10_png",
+			"type": "image",
+			"url": "assets/king/10.png"
+		},
+		{
+			"name": "13_png",
+			"type": "image",
+			"url": "assets/king/13.png"
+		},
+		{
+			"name": "12_png",
+			"type": "image",
+			"url": "assets/king/12.png"
+		},
+		{
+			"name": "11_png",
+			"type": "image",
+			"url": "assets/king/11.png"
 		}
 	]
 }

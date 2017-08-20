@@ -8,7 +8,8 @@ namespace app.king_game {
         tbrKings: eui.TabBar;
         srcKings: eui.Scroller;
         lblSelectedModel: eui.Label;
-        btnStart:eui.Button;
+        btnStart: eui.Button;
+        btnBack: eui.Button;
         childrenCreated() {
             super.childrenCreated();
             this.registerEvent();
@@ -19,6 +20,8 @@ namespace app.king_game {
             this.imgTouch.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showDropList, this);
             this.tbrKings.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onTbrKingsItemTap, this);
             this.btnStart.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGame, this);
+            this.btnBack.addEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
+            manager.addEventListener(Manager.GAME_END, this.close, this);
         }
 
         updateView() {
@@ -42,7 +45,7 @@ namespace app.king_game {
             this.hideDropList();
         }
 
-        startGame(){
+        startGame() {
             ui.show(CardDlg);
         }
 
@@ -50,6 +53,10 @@ namespace app.king_game {
         dispose() {
             super.dispose();
             this.imgTouch.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.showDropList, this);
+            this.btnBack.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.close, this);
+            this.tbrKings.removeEventListener(eui.ItemTapEvent.ITEM_TAP, this.onTbrKingsItemTap, this);
+            this.btnStart.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.startGame, this);
+            manager.removeEventListener(Manager.GAME_END, this.close, this);
         }
     }
 }

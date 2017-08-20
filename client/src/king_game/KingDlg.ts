@@ -30,16 +30,25 @@ namespace app.king_game {
         show(e: eui.ItemTapEvent) {
             let index = this.listHead.selectedIndex;
             let item = this.listHead.getChildAt(index) as eui.ItemRenderer;
-            let grp = item.$children[1] as eui.Group;
-            if (grp.scaleX)
-                egret.Tween.get(grp).to({ scaleX: 0, visible: 0 }, 300).call(() => {
-                    egret.Tween.removeTweens(grp);
+            let img = item.$children[1] as eui.Image;
+            let bg = item.$children[0] as eui.Image;
+            if (img.scaleX)
+                egret.Tween.get(img).to({ scaleX: 0 }, 300).call(() => {
+                    egret.Tween.removeTweens(img);
+                    item.$children[2].visible = true;
+                    item.$children[3].visible = true;
+                    egret.Tween.get(bg).to({ scaleX: 1 }, 300).call(() => {
+                        egret.Tween.removeTweens(bg);
+                    });
                 });;
         }
 
         onBtnEnd() {
             ui.msgBox('quit game?', { buttons: ui.MessageButton.YesNo }, (e: ui.DialogEvent) => {
-                e.result == ui.DialogResult.Yes ? this.close() : "";
+                if (e.result == ui.DialogResult.Yes) {
+                    this.close();
+                    manager.dispatchEventWith(Manager.GAME_END);
+                }
             })
         }
 
@@ -49,26 +58,9 @@ namespace app.king_game {
 
             for (let key in manager.king.playerList) {
                 let index = manager.king.playerList[key];
-                let job = '';
-                switch (key) {
-                    case "1":
-                        job = 'A';
-                        break;
-                    case "11":
-                        job = 'J';
-                        break;
-                    case "12":
-                        job = 'Q';
-                        break
-                    case "13":
-                        job = 'K';
-                        break;
-                    default:
-                        job = key;
-                }
                 source.push({
-                    job: job,
-                    index: 'Player ' + index,
+                    index: index,
+                    source: manager.king.getJobImage(+key)
                 })
                 arrCollect.source = source;
             }

@@ -30,7 +30,7 @@ namespace app {
         }
 
         getJobImage(job: number): string {
-            return job + '_jpg';
+            return job + '_png';
         }
 
         getJobDesc(job: number): string {

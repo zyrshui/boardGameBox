@@ -5,6 +5,7 @@ namespace app.facade {
         btnBack: eui.Button;
         gameType: EGameType;
         lblDesc: eui.Label;
+        imgGameBg: eui.Image;
         constructor(gameType: EGameType) {
             super();
             this.gameType = gameType;
@@ -12,6 +13,7 @@ namespace app.facade {
         childrenCreated() {
             super.childrenCreated();
             let cfg = manager.facede.cfgMap[this.gameType];
+            this.imgGameBg.source = cfg.bg;
             this.lblDesc.text = cfg.desc;
             this.btnBack.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnBack, this);
             this.btnPlay.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onBtnPlay, this);
