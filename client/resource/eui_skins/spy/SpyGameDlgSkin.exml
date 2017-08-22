@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="app.spy.SpyGameDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Image horizontalCenter="0" y="0" source="img_wodibg2_jpg" />
+    <e:Label text="Number of players" y="356" horizontalCenter="0" size="36" />
+    <e:Button id="btnBack" label="" y="8" horizontalCenter="-273" icon="txt_back_png" skinName="eui.Button$Back" />
+    <e:Button id="btnStart" label="" y="778" skinName="eui.Button$Common" horizontalCenter="0" icon="txt_start_png" />
+    <e:Image id="imgTouch" y="450" width="150" horizontalCenter="0" source="img_xuanze_png" />
+    <e:Label id="lblSelectedModel" text="9" y="458" horizontalCenter="0.5" touchEnabled="false" />
+    <e:Scroller id="srcKings" width="150" height="0" y="496" anchorOffsetX="0" horizontalCenter="0" bounces="false"
+                scrollPolicyH="off">
+        <e:TabBar id="tbrKings" y="-2" horizontalCenter="0" itemRendererSkinName="app.wgt.DropListViewSkin">
+            <e:ArrayCollection>
+                <e:Array>
+                    <e:Object txt="5" source="img_2_png" />
+                    <e:Object txt="6" source="img_1_png" />
+                    <e:Object txt="7" source="img_2_png" />
+                    <e:Object txt="8" source="img_1_png" />
+                    <e:Object txt="9" source="img_2_png" />
+                    <e:Object txt="10" source="img_1_png" />
+                    <e:Object txt="11" source="img_2_png" />
+                    <e:Object txt="12" source="img_1_png" />
+                    <e:Object txt="13" source="img_2_png" />
+                    <e:Object txt="14" source="img_1_png" />
+                    <e:Object txt="15" source="img_2_png" />
+                </e:Array>
+            </e:ArrayCollection>
+            <e:layout>
+                <e:VerticalLayout gap="0" />
+            </e:layout>
+        </e:TabBar>
+    </e:Scroller>
+</e:Skin>

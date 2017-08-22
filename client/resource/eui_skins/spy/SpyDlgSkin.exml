@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="app.spy.SpyDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Image horizontalCenter="0" y="0"  source="img_wodibg2_jpg"/>
+	<e:List id="listHead" width="480" height="640" y="318" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:itemRendererSkinName>
+			<e:Skin width="82" height="82">
+	<e:Image source="img_ciban_png" />
+	<e:Label verticalAlign="middle" size="20" textColor="0xffffff" verticalCenter="0" horizontalCenter="0" text="{data.job}"/>
+				<e:Image    source="img_touxiang_png" anchorOffsetX="41" anchorOffsetY="41" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+		</e:itemRendererSkinName>
+		<e:layout>
+			<e:TileLayout horizontalGap="40" requestedColumnCount="4" horizontalAlign="center" verticalGap="40" />
+		</e:layout>
+		<e:ArrayCollection>
+			<e:Array></e:Array>
+		</e:ArrayCollection>
+	</e:List>
+	<e:Button id="btnEnd" label="" y="798" skinName="eui.Button$Common" horizontalCenter="0" icon="txt_end_png" />
+	<e:Image x="224" y="448" />
+</e:Skin>

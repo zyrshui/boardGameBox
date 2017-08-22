@@ -2,14 +2,13 @@
 <e:Skin class="app.king_game.KingDlgSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing">
 	<e:Image horizontalCenter="0" y="0" source="img_gwbg2_jpg" />
-	<e:Image source="test2_jpg" horizontalCenter="0"  visible="false"/>
 	<e:Label id="lblTitle" text="Player %s is King" y="238" horizontalCenter="0" textAlign="center" textColor="0xffffff"
 	         size="40" />
 	<e:List id="listHead" width="480" height="640" y="318" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0">
 		<e:itemRendererSkinName>
 			<e:Skin width="86" height="122">
 				<e:Image top="0" right="0" bottom="0" left="0" source="king_card_bg_png" scaleX="0"/>
-				<e:Image top="0" right="0" bottom="0" left="0" source="{data.source}"  />
+				<e:Image source="{data.source}"   width="86" height="122" anchorOffsetX="43" anchorOffsetY="61" verticalCenter="0" horizontalCenter="0"/>
 				<e:Image source="img_wanjiabg2_png" x="0" y="0"  visible="false"/>
 				<e:Label text="{data.index}" verticalAlign="middle" size="20" textColor="0xffffff" visible="false"/>
 			</e:Skin>

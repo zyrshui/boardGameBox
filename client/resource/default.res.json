@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "card_bg_jpg,Seer_jpg,Idiot_jpg,Hunter_jpg,Witch_jpg,Savior_jpg,Wolves_jpg,btn_king_png,btn_spy_png,btn_wolves_png,img_rukoubg_jpg,img_logo_png,btn_back_png,btn_common_png,txt_start_png,txt_back_png,txt_check_png,txt_end_png,txt_flip_png,txt_next_png,txt_play_png,txt_rule_png,img_fenge_png,img_bg2_jpg,btn_3_1_png,btn_2_0_png,btn_2_1_png,btn_3_0_png,img_xuanxiang_png,img_fangkuang_png,img_honghgou_png,txt_12p_png,txt_9p_png,img_tips_png,img_xiajiantou_png,img_wanjiabg_png,img_bg3_jpg,Villager_jpg,Wolf King_jpg,img_wanjiabg2_png,img_xuanzhong_png,img_1_png,img_2_png,img_querenkuang_png,img_wangkuang_png,txt_yes_png,txt_no_png,img_gwbg2_jpg,img_facade_bg1_jpg,img_facade_bg2_jpg,test2_jpg,king_card_bg_png,1_png,2_png,3_png,4_png,5_png,6_png,7_png,8_png,9_png,10_png,13_png,12_png,11_png",
+			"keys": "card_bg_jpg,Seer_jpg,Idiot_jpg,Hunter_jpg,Witch_jpg,Savior_jpg,Wolves_jpg,btn_king_png,btn_spy_png,btn_wolves_png,img_rukoubg_jpg,img_logo_png,btn_back_png,btn_common_png,txt_start_png,txt_back_png,txt_check_png,txt_end_png,txt_flip_png,txt_next_png,txt_play_png,txt_rule_png,img_fenge_png,img_bg2_jpg,btn_3_1_png,btn_2_0_png,btn_2_1_png,btn_3_0_png,img_xuanxiang_png,img_fangkuang_png,img_honghgou_png,txt_12p_png,txt_9p_png,img_tips_png,img_xiajiantou_png,img_wanjiabg_png,img_bg3_jpg,Villager_jpg,Wolf King_jpg,img_wanjiabg2_png,img_xuanzhong_png,img_1_png,img_2_png,img_querenkuang_png,img_wangkuang_png,txt_yes_png,txt_no_png,img_gwbg2_jpg,img_facade_bg1_jpg,img_facade_bg2_jpg,test2_jpg,king_card_bg_png,1_png,2_png,3_png,4_png,5_png,6_png,7_png,8_png,9_png,10_png,13_png,12_png,11_png,img_facade_bg3_jpg,img_wodibg2_jpg,txt_see_png,btn_l_png,img_ciban_png,img_touxiang_png,img_xuanze_png,img_zhipian_png",
 			"name": "preload"
 		}
 	],
@@ -335,6 +335,46 @@
 			"name": "11_png",
 			"type": "image",
 			"url": "assets/king/11.png"
+		},
+		{
+			"name": "img_facade_bg3_jpg",
+			"type": "image",
+			"url": "assets/facade/img_facade_bg3.jpg"
+		},
+		{
+			"name": "img_wodibg2_jpg",
+			"type": "image",
+			"url": "assets/spy/img_wodibg2.jpg"
+		},
+		{
+			"name": "txt_see_png",
+			"type": "image",
+			"url": "assets/spy/txt_see.png"
+		},
+		{
+			"name": "btn_l_png",
+			"type": "image",
+			"url": "assets/spy/btn_l.png"
+		},
+		{
+			"name": "img_ciban_png",
+			"type": "image",
+			"url": "assets/spy/img_ciban.png"
+		},
+		{
+			"name": "img_touxiang_png",
+			"type": "image",
+			"url": "assets/spy/img_touxiang.png"
+		},
+		{
+			"name": "img_xuanze_png",
+			"type": "image",
+			"url": "assets/spy/img_xuanze.png"
+		},
+		{
+			"name": "img_zhipian_png",
+			"type": "image",
+			"url": "assets/spy/img_zhipian.png"
 		}
 	]
 }

@@ -6,7 +6,6 @@ namespace app {
         WHO_IS_THIS_SPY
     }
     interface IGameData {
-        name: string;
         desc: string;
         bg: string;
         show: () => void
@@ -14,7 +13,6 @@ namespace app {
     export class FacedeManager {
         cfgMap: { [id: number]: IGameData } = {
             0: {
-                name: "Werewolves",
                 desc: t.WERE_DESC,
                 bg: "img_facade_bg1_jpg",
                 show: () => {
@@ -22,7 +20,6 @@ namespace app {
                 }
             },
             1: {
-                name: "The King's game",
                 desc: t.KING_DESC,
                 bg: "img_facade_bg2_jpg",
                 show: () => {
@@ -30,11 +27,10 @@ namespace app {
                 }
             },
             2: {
-                name: "",
-                desc: "",
-                bg: "",
+                desc: t.SPY_DESC,
+                bg: "img_facade_bg3_jpg",
                 show: () => {
-
+                    ui.show(spy.SpyGameDlg);
                 }
             }
         };

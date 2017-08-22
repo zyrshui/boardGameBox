@@ -21,5 +21,6 @@ Seer: when the judge says “Seers, please open your eyes” at night, you need 
 3.    The King randomly choose two cards and assign a job corresponding to those cards.
 4.    The two people holding those two cards have to finish what the King told them to do.
 5.    Shuffle the cards and repeat the procedure above.`,
+        SPY_DESC: ``
     }
 }

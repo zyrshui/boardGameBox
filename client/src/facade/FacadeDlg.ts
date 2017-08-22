@@ -21,7 +21,8 @@ namespace app.facade {
         }
 
         onBtnSpy() {
-            ui.msgBox('Not open yet', { buttons: ui.MessageButton.Yes });
+            // ui.msgBox('Not open yet', { buttons: ui.MessageButton.Yes });
+            ui.show(FacadeDetailDlg, {params:[EGameType.WHO_IS_THIS_SPY]});
         }
 
         dispose() {

@@ -5,10 +5,12 @@ namespace app {
         werewolves:WerewolvesManager;
         facede:FacedeManager;
         king:KingManager;
+        spy:SpyManager;
         init(){
             this.werewolves = new WerewolvesManager();
             this.facede = new FacedeManager();
             this.king = new KingManager();
+            this.spy = new SpyManager();
         }
     }
 }

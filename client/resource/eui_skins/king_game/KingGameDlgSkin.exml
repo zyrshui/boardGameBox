@@ -5,7 +5,7 @@
 	<e:Label text="Number of players" y="356" horizontalCenter="0" size="36"/>
     <e:Button id="btnBack" label="" y="8" horizontalCenter="-273" icon="txt_back_png" skinName="eui.Button$Back"/>
     <e:Button id="btnStart" label="" y="778" skinName="eui.Button$Common" horizontalCenter="0"  icon="txt_start_png"/>
-	<e:Image id="imgTouch" y="450" width="150" height="44" horizontalCenter="0" source="img_2_png"/>
+	<e:Image id="imgTouch" y="450" width="150" horizontalCenter="0" source="img_xuanze_png"/>
     <e:Label id="lblSelectedModel" text="9" y="458" horizontalCenter="0.5" touchEnabled="false" />
     <e:Scroller id="srcKings" width="150" height="0" y="496" anchorOffsetX="0" horizontalCenter="0" bounces="false" scrollPolicyH="off">
         <e:TabBar id="tbrKings" y="-2" horizontalCenter="0" itemRendererSkinName="app.wgt.DropListViewSkin">
