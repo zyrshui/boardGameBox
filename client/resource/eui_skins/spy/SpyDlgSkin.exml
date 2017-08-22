@@ -8,7 +8,7 @@
 	<e:Image source="img_ciban_png" />
 	<e:Label verticalAlign="middle" size="20" textColor="0xffffff" verticalCenter="0" horizontalCenter="0" text="{data.job}"/>
 				<e:Image    source="img_touxiang_png" anchorOffsetX="41" anchorOffsetY="41" verticalCenter="0" horizontalCenter="0"/>
-                <e:Image source="img_wanjiabg2_png" x="0" y="0" />
+                <e:Image source="img_biaoqian_png" x="0" y="0" />
 				<e:Label text="{data.index}" verticalAlign="middle" size="20" textColor="0xffffff"/>
 			</e:Skin>
 		</e:itemRendererSkinName>
