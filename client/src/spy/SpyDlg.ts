@@ -28,10 +28,14 @@ namespace app.spy {
             let index = this.listHead.selectedIndex;
             let item = this.listHead.getChildAt(index) as eui.ItemRenderer;
             let img = item.$children[2] as eui.Image;
+            let corImg = item.$children[3] as eui.Image;
+            let lblIndex = item.$children[4] as eui.Image;
             if (img.scaleX)
-                egret.Tween.get(img).to({ scaleX: 0 }, 300).call(() => {
-                    egret.Tween.removeTweens(img);
-                });;
+                corImg.visible = false;
+            lblIndex.visible = false;
+            egret.Tween.get(img).to({ scaleX: 0 }, 300).call(() => {
+                egret.Tween.removeTweens(img);
+            });;
         }
 
         onBtnEnd() {
@@ -49,6 +53,7 @@ namespace app.spy {
             for (let i = 0, l = manager.spy.playerList.length; i < l; i++) {
                 source.push({
                     job: manager.spy.playerList[i] == manager.spy.sameWoed ? "innocent" : "spy",
+                    index: i + 1
                 });
             }
             arrCollect.source = source;
